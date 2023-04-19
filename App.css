@@ -1974,7 +1974,7 @@ section.use_cases_section .use_cases_wrapper .use_case p {
     margin-block-end: 92px;
     max-width: 1920px;
     width: 100%;
-    margin-left:1em;
+ padding-left: 25px;
     padding-right:480px ;
     
 }

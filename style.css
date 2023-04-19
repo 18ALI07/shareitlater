@@ -1,10 +1,12 @@
 
-
+/* * {
+  outline: 1px solid #f00 !important;
+} */
 body {
   overflow-x: auto;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  
   /* hide horizontal scrollbar */
 }
 .footer .footer_wrapper .site_info{
@@ -494,14 +496,14 @@ border-radius: 85px;
 .contenti{
 
   position: absolute;
-  width: 9em;
+  width: 10em;
     height: 57px;
     top: 13px;
-    left: 17px;
+    left: 35px;
     font-family: 'Monda';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 78px;
     color: #FFFFFF;
 
@@ -992,14 +994,14 @@ border-radius: 85px;
 .contenti{
 
   position: absolute;
-  width: 9em;
+  width: 10em;
     height: 57px;
     top: 13px;
-    left: 37px;
+    left: 50px;
     font-family: 'Monda';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 78px;
     color: #FFFFFF;
 
@@ -1490,11 +1492,11 @@ border-radius: 85px;
   width: 9em;
     height: 57px;
     top: 13px;
-    left: 57px;
+    left: 70px;
     font-family: 'Monda';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 78px;
     color: #FFFFFF;
 
@@ -1957,7 +1959,7 @@ border-radius: 85px;
   position: absolute;
   width: 100%;
   height: 158px;
-  padding-left: 1em;
+  padding-left: 2em;
   top: 20px;
   font-family: 'Monda';
   font-style: normal;
@@ -1968,9 +1970,10 @@ border-radius: 85px;
 }
 .desci{
   position: absolute;
-  width: 1322px;
+  width: 90%;
+  padding-left: 4.3em;
   height: 75px;
-  left: 122px;
+  
   top: 138px;
   font-family: 'Monda';
   font-style: normal;
@@ -1992,10 +1995,10 @@ border-radius: 85px;
 .contenti{
 
   position: absolute;
-  width: 9em;
+  width: 10em;
   height: 57px;
   top: 30px;
-  left: -95px;
+  left: 0px;
   font-family: 'Monda';
   font-style: normal;
   font-weight: 700;
@@ -2741,7 +2744,7 @@ color: #FFFFFF;
 .it{
   font-family: 'M PLUS Code Latin', sans-serif;
   position: absolute;
-  width: 337.29px;
+  width: 1em;
   height: 448.26px;
   margin-top: 107px;
 
@@ -3006,7 +3009,7 @@ border-radius: 85px;
   position: absolute;
     width: 100%;
     height: 158px;
-    padding-left: 1em;
+    padding-left: 5em;
     top: 20px;
     font-family: 'Monda';
     font-style: normal;
@@ -3019,7 +3022,7 @@ border-radius: 85px;
   position: absolute;
   width:90%;
   height: 75px;
-  left: 317px;
+  padding-left: 10em;
   top: 200px;
   font-family: 'Monda';
   font-style: normal;
@@ -3170,7 +3173,7 @@ top: 3350px;
     position: absolute;
 width: 1150px;
 height: 656px;
-left: 791px;
+left: 763px;
 top: 3350px;
 font-family: 'Monda';
 font-style: normal;
