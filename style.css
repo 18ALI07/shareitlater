@@ -1,6 +1,4 @@
-* {
-  outline: 1px solid #f00 !important;
-}
+
 
 body {
   overflow-x: auto;
@@ -129,14 +127,14 @@ background-size: 100% 596.28%;
     color: #FFFFFF;
   }
   .item7{
-    display: block;
+    
     position: absolute;
     margin-top: 34px;
     margin-bottom: 44px;
     margin-left: 77%;
   }
   .item8{
-    width: 100px;
+    width: 4em;
     height: 20px;
     display: block;
     position: absolute;
@@ -163,7 +161,7 @@ background-size: 100% 596.28%;
   }
   .item10{
     position: absolute;
-    width: 190.14px;
+    width: 8em;
     height: 38.35px;
     font-family: 'Inter';
     font-style: normal;
@@ -190,12 +188,13 @@ background-size: 100% 596.28%;
   .writeshare{
     font-family: 'M PLUS Code Latin', sans-serif;
     position: absolute;
-    width: 293.28px;
+    width: 5em;
+    padding-left: 0.6em;
     height: 263.28px;
     margin-top: 263px;
 
     margin-bottom: 331.22px;
-    margin-left: 15%;
+   
     font-family: 'M PLUS Code Latin';
     font-style: normal;
     font-weight: 600;
@@ -206,12 +205,13 @@ background-size: 100% 596.28%;
 .it{
   font-family: 'M PLUS Code Latin', sans-serif;
   position: absolute;
-  width: 337.29px;
+  width: 1em;
+  padding-left: 2em;
   height: 448.26px;
   margin-top: 155px;
 
   margin-bottom: 292.5px;
-  margin-left: 194px;
+  
   font-family: 'M PLUS Code Latin';
   font-style: normal;
   font-weight: 400;
@@ -221,7 +221,7 @@ background-size: 100% 596.28%;
 }
 .later{
   position: absolute;
-  width: 171.18px;
+  width: 2.5em;
   height: 67.66px;
   font-family: 'M PLUS Code Latin';
   margin-top: 359px;
@@ -249,10 +249,11 @@ background-size: 100% 596.28%;
   }
   .title{
     position: absolute;
-    width: 468px;
+   width: 100%;
     height: 74px;
+    padding-left: 1.5em;
     top: 674px;
-    left: 24px;
+ 
     font-family: 'Monda';
     font-style: normal;
     font-weight: 700;
@@ -311,10 +312,11 @@ background-size: 100% 596.28%;
 }
 .titlet{
   position: absolute;
-  width: 468px;
-  height: 74px;
+  width: 100%;
+    height: 74px;
+    padding-left: 1.5em;
   top: 45%;
-  left: 55px;
+
   
   font-family: 'Monda';
   font-style: normal;
@@ -376,10 +378,11 @@ background-size: 100% 596.28%;
 }
 .titles{
   position: absolute;
-  width: 468px;
+  width: 100%;
+    padding-left: 1.5em;
   height: 74px;
   top: 72%;
-      left: 65px;
+     
   
   font-family: 'Monda';
   font-style: normal;
@@ -455,8 +458,9 @@ border-radius: 85px;
 .titlei{
   position: absolute;
   width: 100%;
+  padding-left: 1em;
   height: 158px;
-  left: 25px;
+
   top: 34px;
   font-family: 'Monda';
   font-style: normal;
@@ -490,7 +494,7 @@ border-radius: 85px;
 .contenti{
 
   position: absolute;
-    width: 475px;
+  width: 9em;
     height: 57px;
     top: 13px;
     left: 17px;
@@ -626,7 +630,7 @@ border-radius: 85px;
     margin-left: 79%;
   }
   .item8{
-    width: 100px;
+    width: 4em;
     height: 20px;
     display: block;
     position: absolute;
@@ -653,7 +657,7 @@ border-radius: 85px;
   }
   .item10{
     position: absolute;
-    width: 190.14px;
+    width: 8em;
     height: 38.35px;
     font-family: 'Inter';
     font-style: normal;
@@ -680,12 +684,13 @@ border-radius: 85px;
   .writeshare{
     font-family: 'M PLUS Code Latin', sans-serif;
     position: absolute;
-    width: 293.28px;
+    width: 5em;
+    padding-left: 0.6em;
     height: 263.28px;
     margin-top: 263px;
    
     margin-bottom: 331.22px;
-    margin-left: 15%;
+ 
     font-family: 'M PLUS Code Latin';
     font-style: normal;
     font-weight: 600;
@@ -696,12 +701,13 @@ border-radius: 85px;
 .it{
   font-family: 'M PLUS Code Latin', sans-serif;
   position: absolute;
-  width: 337.29px;
+  width: 1em;
+  padding-left: 1.7em;
   height: 448.26px;
   margin-top: 155px;
 
   margin-bottom: 292.5px;
-  margin-left: 210px;
+
   font-family: 'M PLUS Code Latin';
   font-style: normal;
   font-weight: 400;
@@ -711,13 +717,14 @@ border-radius: 85px;
 }
 .later{
   position: absolute;
-  width: 171.18px;
+  width: 2.5em;
+  padding-left: 7.3em;
   height: 67.66px;
   font-family: 'M PLUS Code Latin';
   margin-top: 366px;
 
   margin-bottom: 346.42px;
-  margin-left: 235px;
+
   font-weight: 500;
   font-size: 30px;
   line-height: 79px;
@@ -739,10 +746,11 @@ border-radius: 85px;
   }
   .title{
     position: absolute;
-    width: 468px;
+    width: 100%;
     height: 74px;
+    padding-left: 1.5em;
     top: 674px;
-    left: 24px;
+   
     font-family: 'Monda';
     font-style: normal;
     font-weight: 700;
@@ -801,10 +809,11 @@ border-radius: 85px;
 }
 .titlet{
   position: absolute;
-  width: 468px;
+  width: 100%;
   height: 74px;
+  padding-left: 1.5em;
   top: 50%;
-  left: 65px;
+
   
   font-family: 'Monda';
   font-style: normal;
@@ -866,10 +875,11 @@ border-radius: 85px;
 }
 .titles{
   position: absolute;
-  width: 468px;
+  width: 100%;
+    padding-left: 1.5em;
   height: 74px;
   top: 77%;
-      left: 65px;
+     
   
   font-family: 'Monda';
   font-style: normal;
@@ -935,8 +945,9 @@ background-size: 292.43% 691.65%;
 position: absolute;
 width:90%;
 height: 546px;
-top: 67px;
-    left: 44px;
+top:40px;
+left: 1.1em;
+  
 background: radial-gradient(ellipse at 49.97% 57.88%, #1B7B99 0%, rgba(55, 108, 157, 0.0677083) 93.23%, rgba(58, 255, 220, 0) 100%, rgba(58, 255, 220, 0) 100%, rgba(124, 161, 154, 0) 100%);
 background-size: 100% 596.28%;
 
@@ -946,7 +957,8 @@ border-radius: 85px;
   position: absolute;
   width: 100%;
   height: 158px;
-  left: 12px;
+
+  padding-left: 1em;
   top: 34px;
   font-family: 'Monda';
   font-style: normal;
@@ -980,7 +992,7 @@ border-radius: 85px;
 .contenti{
 
   position: absolute;
-    width: 475px;
+  width: 9em;
     height: 57px;
     top: 13px;
     left: 37px;
@@ -1084,8 +1096,7 @@ border-radius: 85px;
   position: absolute;
   width: 67px;
   height: 62px;
-  width: 345px;
-  height: 70px;
+  
   margin-top: 32px;
   margin-bottom: 50px;
   margin-left: 43%;
@@ -1116,7 +1127,7 @@ border-radius: 85px;
     margin-left: 77%;
   }
   .item8{
-    width: 100px;
+    width: 4em;
     height: 20px;
     display: block;
     position: absolute;
@@ -1143,7 +1154,7 @@ border-radius: 85px;
   }
   .item10{
     position: absolute;
-    width: 190.14px;
+    width: 8em;
     height: 38.35px;
     font-family: 'Inter';
     font-style: normal;
@@ -1170,12 +1181,13 @@ border-radius: 85px;
   .writeshare{
     font-family: 'M PLUS Code Latin', sans-serif;
     position: absolute;
-    width: 293.28px;
+    width: 5em;
+    padding-left: 0.6em;
     height: 263.28px;
     margin-top: 263px;
     
     margin-bottom: 331.22px;
-    margin-left: 15%;
+   
     font-family: 'M PLUS Code Latin';
     font-style: normal;
     font-weight: 600;
@@ -1186,12 +1198,13 @@ border-radius: 85px;
 .it{
   font-family: 'M PLUS Code Latin', sans-serif;
   position: absolute;
-  width: 337.29px;
+  width: 1em;
+  padding-left: 1.7em;
   height: 448.26px;
   margin-top: 155px;
 
   margin-bottom: 292.5px;
-  margin-left: 210px;
+
   font-family: 'M PLUS Code Latin';
   font-style: normal;
   font-weight: 400;
@@ -1201,13 +1214,14 @@ border-radius: 85px;
 }
 .later{
   position: absolute;
-  width: 171.18px;
+  width: 2.5em;
+  padding-left: 7.3em;
   height: 67.66px;
   font-family: 'M PLUS Code Latin';
   margin-top: 366px;
 
   margin-bottom: 346.42px;
-  margin-left: 235px;
+ 
   font-weight: 500;
   font-size: 30px;
   line-height: 79px;
@@ -1229,10 +1243,11 @@ border-radius: 85px;
   }
   .title{
     position: absolute;
-    width: 468px;
+    width: 100%;
     height: 74px;
+    padding-left: 1.5em;
     top: 674px;
-    left: 24px;
+ 
     font-family: 'Monda';
     font-style: normal;
     font-weight: 700;
@@ -1291,10 +1306,11 @@ border-radius: 85px;
 }
 .titlet{
   position: absolute;
-  width: 468px;
+  width: 100%;
   height: 74px;
+  padding-left: 1.5em;
   top: 50%;
-  left: 65px;
+  
   
   font-family: 'Monda';
   font-style: normal;
@@ -1356,10 +1372,11 @@ border-radius: 85px;
 }
 .titles{
   position: absolute;
-  width: 468px;
+  width: 100%;
+  padding-left: 1.5em;
   height: 74px;
   top: 75%;
-      left: 65px;
+      
   
   font-family: 'Monda';
   font-style: normal;
@@ -1436,7 +1453,7 @@ border-radius: 85px;
   position: absolute;
   width: 100%;
   height: 158px;
-  left: 12px;
+  padding-left: 1em;
   top: 34px;
   font-family: 'Monda';
   font-style: normal;
@@ -1470,7 +1487,7 @@ border-radius: 85px;
 .contenti{
 
   position: absolute;
-    width: 475px;
+  width: 9em;
     height: 57px;
     top: 13px;
     left: 57px;
@@ -1579,8 +1596,7 @@ border-radius: 85px;
   position: absolute;
   width: 67px;
   height: 62px;
-  width: 345px;
-  height: 70px;
+ 
   margin-top: 67px;
   margin-bottom: 50px;
   margin-left: 32%;
@@ -1638,7 +1654,7 @@ border-radius: 85px;
   }
   .item10{
     position: absolute;
-    width: 190.14px;
+    width: 8em;
     height: 38.35px;
     font-family: 'Inter';
     font-style: normal;
@@ -1665,12 +1681,13 @@ border-radius: 85px;
   .writeshare{
     font-family: 'M PLUS Code Latin', sans-serif;
     position: absolute;
-    width: 503.28px;
+    width: 5em;
+    padding-left: 0.6em;
     height: 430.28px;
     margin-top: 470px;
 
     margin-bottom: 331.22px;
-    margin-left: 15%;
+ 
     font-family: 'M PLUS Code Latin';
     font-style: normal;
     font-weight: 600;
@@ -1681,12 +1698,13 @@ border-radius: 85px;
 .it{
   font-family: 'M PLUS Code Latin', sans-serif;
   position: absolute;
-  width: 337.29px;
+  width: 1em;
+    padding-left: 2em;
   height: 448.26px;
   margin-top: 396px;
  
   margin-bottom: 292.5px;
-  margin-left: 379px;
+
   font-family: 'M PLUS Code Latin';
   font-style: normal;
   font-weight: 400;
@@ -1696,13 +1714,14 @@ border-radius: 85px;
 }
 .later{
   position: absolute;
-  width: 171.18px;
+  width: 2.5em;
   height: 67.66px;
+  padding-left: 7.5em;
   font-family: 'M PLUS Code Latin';
   margin-top: 650px;
 
   margin-bottom: 346.42px;
-  margin-left: 420px;
+
   font-weight: 500;
   font-size: 50px;
   line-height: 79px;
@@ -1724,10 +1743,11 @@ border-radius: 85px;
   }
   .title{
     position: absolute;
-    width: 468px;
+    width: 100%;
     height: 74px;
+    padding-left: 1.5em;
     top: 1009px;
-        left: 65px;
+       
     
     font-family: 'Monda';
     font-style: normal;
@@ -1788,10 +1808,11 @@ border-radius: 85px;
 }
 .titlet{
   position: absolute;
-  width: 468px;
+  width: 100%;
   height: 74px;
+  padding-left: 1.5em;
   top: 50%;
-  left: 65px;
+ 
   
   font-family: 'Monda';
   font-style: normal;
@@ -1855,10 +1876,11 @@ color: #FFFFFF;
 }
 .titles{
   position: absolute;
-  width: 468px;
+  width: 100%;
+    padding-left: 1.5em;
   height: 74px;
   top: 75%;
-      left: 65px;
+      
   
   font-family: 'Monda';
   font-style: normal;
@@ -1935,7 +1957,7 @@ border-radius: 85px;
   position: absolute;
   width: 100%;
   height: 158px;
-  left: 82px;
+  padding-left: 1em;
   top: 20px;
   font-family: 'Monda';
   font-style: normal;
@@ -1970,7 +1992,7 @@ border-radius: 85px;
 .contenti{
 
   position: absolute;
-  width: 475px;
+  width: 9em;
   height: 57px;
   top: 30px;
   left: -95px;
@@ -2086,8 +2108,7 @@ color: #FFFDFD;
   position: absolute;
   width: 67px;
   height: 62px;
-  width: 345px;
-  height: 70px;
+  
   margin-top: 67px;
       
   margin-bottom: 50px;
@@ -2143,7 +2164,7 @@ color: #FFFFFF;
   }
   .item9{
     position: absolute;
-    width: 200px;
+    width: 9em;
     height: 86px;
     background: #111212;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2155,7 +2176,7 @@ color: #FFFFFF;
   }
   .item10{
     position: absolute;
-    width: 190.14px;
+    width: 8em;
     height: 38.35px;
     font-family: 'Inter';
     font-style: normal;
@@ -2213,7 +2234,7 @@ color: #FFFFFF;
 }
 .later{
   position: absolute;
-  width: 171.18px;
+  width: 2.5em;
   height: 67.66px;
   font-family: 'M PLUS Code Latin';
   margin-top: 740px;
@@ -2241,10 +2262,11 @@ color: #FFFFFF;
   }
   .title{
     position: absolute;
-    width: 468px;
+    width: 100%;
     height: 74px;
+    padding-left: 1.5em;
     top: 1009px;
-        left: 65px;
+ 
     
     font-family: 'Monda';
     font-style: normal;
@@ -2307,10 +2329,11 @@ color: #FFFFFF;
 }
 .titlet{
   position: absolute;
-  width: 468px;
-  height: 74px;
+  width: 100%;
+    height: 74px;
+    padding-left: 1.5em;
   top: 50%;
-  left: 65px;
+
   
   font-family: 'Monda';
   font-style: normal;
@@ -2374,10 +2397,11 @@ color: #FFFFFF;
 }
 .titles{
   position: absolute;
-  width: 468px;
+  width: 100%;
+    padding-left: 1.5em;
   height: 74px;
   top: 75%;
-      left: 65px;
+  
   
   font-family: 'Monda';
   font-style: normal;
@@ -2456,7 +2480,7 @@ border-radius: 85px;
   position: absolute;
     width: 100%;
     height: 158px;
-    left: 52px;
+    padding-left: 1em;
     top: 20px;
     font-family: 'Monda';
     font-style: normal;
@@ -2467,7 +2491,7 @@ border-radius: 85px;
 }
 .desci{
   position: absolute;
-  width: 1322px;
+  width: 90%;
   height: 75px;
   left: 122px;
   top: 200px;
@@ -2490,7 +2514,7 @@ border-radius: 85px;
 }
 .contenti{
   position: absolute;
-  width: 475px;
+  width: 9em;
   height: 57px;
   top: 30px;
       left: 15px;
@@ -2606,8 +2630,7 @@ color: #FFFDFD;
   position: absolute;
   width: 67px;
   height: 62px;
-  width: 345px;
-  height: 70px;
+
   margin-top: 67px;
       
   margin-bottom: 50px;
@@ -2766,10 +2789,11 @@ color: #FFFFFF;
   }
   .title{
     position: absolute;
-    width: 468px;
+    width: 100%;
     height: 74px;
+    padding-left: 1.5em;
     top: 1009px;
-        left: 65px;
+   
     
     font-family: 'Monda';
     font-style: normal;
@@ -2832,10 +2856,11 @@ color: #FFFFFF;
 }
 .titlet{
   position: absolute;
-  width: 468px;
-  height: 74px;
+  width: 100%;
+    height: 74px;
+    padding-left: 1.5em;
   top: 50%;
-  left: 65px;
+  
   
   font-family: 'Monda';
   font-style: normal;
@@ -2899,10 +2924,11 @@ color: #FFFFFF;
 }
 .titles{
   position: absolute;
-  width: 468px;
+  width: 100%;
+    padding-left: 1.5em;
   height: 74px;
   top: 75%;
-      left: 65px;
+  
   
   font-family: 'Monda';
   font-style: normal;
@@ -2980,7 +3006,7 @@ border-radius: 85px;
   position: absolute;
     width: 100%;
     height: 158px;
-    left: 250px;
+    padding-left: 1em;
     top: 20px;
     font-family: 'Monda';
     font-style: normal;
@@ -2991,7 +3017,7 @@ border-radius: 85px;
 }
 .desci{
   position: absolute;
-  width: 1322px;
+  width:90%;
   height: 75px;
   left: 317px;
   top: 200px;
@@ -3014,7 +3040,7 @@ border-radius: 85px;
 }
 .contenti{
   position: absolute;
-  width: 475px;
+  width: 9em;
   height: 57px;
   top: 30px;
       left: 15px;
@@ -3050,7 +3076,7 @@ section {
 
   .contenti{
     position: absolute;
-width: 475px;
+    width: 9em;
 height: 57px;
 top: 30px;
     left: 15px;
@@ -3091,7 +3117,7 @@ color: #FFFFFF;
     position: absolute;
 width: 1742px;
 height: 158px;
-left: 89px;
+padding-left: 1em;
     top: 20px;
 font-family: 'Monda';
 font-style: normal;
@@ -3119,9 +3145,10 @@ border-radius: 85px;
 }
 .titles{
     position: absolute;
-width: 358px;
+    width: 100%;
+    padding-left: 1.5em;
 height: 98px;
-left: 65px;
+
 font-family: 'Monda';
 font-style: normal;
 font-weight: 700;
@@ -3219,9 +3246,9 @@ color: #FFFFFF;
 }
 .titlet{
     position: absolute;
-width: 335px;
-height: 96px;
-left: 65px;
+width: 100%;
+    height: 74px;
+    padding-left: 1.5em;
 font-family: 'Monda';
 font-style: normal;
 font-weight: 700;
@@ -3331,10 +3358,10 @@ background: #D9D9D9;
 }
 .title{
     position: absolute;
-width: 468px;
-height: 74px;
+    width: 100%;
+    height: 74px;
+    padding-left: 1.5em;
 top: 1009px;
-    left: 65px;
 
 font-family: 'Monda';
 font-style: normal;

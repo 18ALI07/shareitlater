@@ -1943,6 +1943,12 @@ section.use_cases_section .use_cases_wrapper .use_case p {
         font-size: 12px;
         
     }
+    .footer .footer_wrapper .terms {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
     .footer .footer_wrapper .contact {
       
         font-size: 18px;
@@ -1951,6 +1957,12 @@ section.use_cases_section .use_cases_wrapper .use_case p {
 @media (min-width:769px) {
     .footer{
         font-size: 20px;
+        
+    }
+    .footer .footer_wrapper .terms {
+        align-items: center;
+        display: flex;
+        justify-content: center;
         
     }
 }
@@ -1985,7 +1997,7 @@ section.use_cases_section .use_cases_wrapper .use_case p {
 .footer .footer_wrapper .site_map .category .category_routes .nav_route {
     color: hsla(0, 0%, 100%, .8);
     cursor: pointer;
-    font-size: 21px;
+    
     font-weight: 700;
     line-height: 50px;
     transition: color .2s ease-out;
@@ -2035,6 +2047,20 @@ section.use_cases_section .use_cases_wrapper .use_case p {
     font-size:40px ;
 }
 
+}
+@media screen and (max-width:768px){
+    .footer .footer_wrapper .site_map .category .category_routes .nav_route {
+       
+        font-size: 16px;
+        
+    }
+}
+@media screen and (min-width:769px){
+    .footer .footer_wrapper .site_map .category .category_routes .nav_route {
+       
+        font-size: 21px;
+        
+    }
 }
 @media screen and (width:1440px){
     .footer .footer_wrapper h3 {
@@ -2286,11 +2312,6 @@ section.use_cases_section .use_cases_wrapper .use_case p {
     }
 }
 
-.footer .footer_wrapper .terms {
-    align-items: center;
-    display: flex;
-    justify-content: center
-}
 
 
 @media (max-width:1368px) {
