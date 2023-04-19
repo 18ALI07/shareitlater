@@ -1962,6 +1962,7 @@ section.use_cases_section .use_cases_wrapper .use_case p {
     margin-block-end: 92px;
     max-width: 1920px;
     width: 100%;
+    margin-left:1em;
     padding-right:480px ;
     
 }
@@ -2152,7 +2153,7 @@ section.use_cases_section .use_cases_wrapper .use_case p {
     display: flex;
     justify-content: space-between;
     margin-block-start: 45px;
-    padding: 31px 1800px 29px 0px;
+    padding: 31px 100% 29px 0px;
 }
 
 @media (max-width:1368px) {
