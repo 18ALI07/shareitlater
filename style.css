@@ -237,8 +237,8 @@ background-size: 100% 596.28%;
   /* background: #111212;  fallback color */
   /* background: radial-gradient(ellipse at center, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%); */
    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  */
-   background: #3A6262; 
-   background: radial-gradient(circle at top left, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%), radial-gradient(circle at bottom right, #111212 0.83%, rgba(72, 160, 160, 0) 94.88%);
+   background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
   background-size: 100%;
   background-position: left top, right bottom;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -306,9 +306,8 @@ background-size: 100% 596.28%;
 }
 #technology{
   width: 100%;
-    background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262;
+  background: #3A6262; /* fallback color */
+  background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titlet{
   position: absolute;
@@ -372,9 +371,8 @@ background: #3A6262;
 }
 #safety{
   width: 100%;
-  background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262; 
+  background: #3A6262; /* fallback color */
+  background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titles{
   position: absolute;
@@ -734,8 +732,8 @@ border-radius: 85px;
   /* background: #111212;  fallback color */
   /* background: radial-gradient(ellipse at center, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%); */
    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  */
-   background: #3A6262; 
-   background: radial-gradient(circle at top left, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%), radial-gradient(circle at bottom right, #111212 0.83%, rgba(72, 160, 160, 0) 94.88%);
+   background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
   background-size: 100%;
   background-position: left top, right bottom;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -803,9 +801,8 @@ border-radius: 85px;
 }
 #technology{
   width: 100%;
-    background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262;
+  background: #3A6262; /* fallback color */
+  background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titlet{
   position: absolute;
@@ -869,9 +866,8 @@ background: #3A6262;
 }
 #safety{
   width: 100%;
-  background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262; 
+  background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titles{
   position: absolute;
@@ -1231,8 +1227,8 @@ border-radius: 85px;
   /* background: #111212;  fallback color */
   /* background: radial-gradient(ellipse at center, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%); */
    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  */
-   background: #3A6262; 
-   background: radial-gradient(circle at top left, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%), radial-gradient(circle at bottom right, #111212 0.83%, rgba(72, 160, 160, 0) 94.88%);
+   background: #3A6262; /* fallback color */
+   background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
   background-size: 100%;
   background-position: left top, right bottom;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1300,9 +1296,8 @@ border-radius: 85px;
 }
 #technology{
   width: 100%;
-    background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262;
+  background: #3A6262; /* fallback color */
+  background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titlet{
   position: absolute;
@@ -1366,9 +1361,8 @@ background: #3A6262;
 }
 #safety{
   width: 100%;
-  background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262; 
+  background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titles{
   position: absolute;
@@ -1733,8 +1727,8 @@ border-radius: 85px;
   /* background: #111212;  fallback color */
   /* background: radial-gradient(ellipse at center, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%); */
    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  */
-   background: #3A6262; 
-   background: radial-gradient(circle at top left, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%), radial-gradient(circle at bottom right, #111212 0.83%, rgba(72, 160, 160, 0) 94.88%);
+   background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
   background-size: 100%;
   background-position: left top, right bottom;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1804,9 +1798,8 @@ border-radius: 85px;
 }
 #technology{
   width: 100%;
-    background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262;
+  background: #3A6262; /* fallback color */
+  background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titlet{
   position: absolute;
@@ -1872,9 +1865,8 @@ color: #FFFFFF;
 }
 #safety{
   width: 100%;
-  background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262; 
+  background: #3A6262; /* fallback color */
+  background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titles{
   position: absolute;
@@ -2257,8 +2249,8 @@ color: #FFFFFF;
   /* background: #111212;  fallback color */
   /* background: radial-gradient(ellipse at center, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%); */
    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  */
-   background: #3A6262; 
-   background: radial-gradient(circle at top left, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%), radial-gradient(circle at bottom right, #111212 0.83%, rgba(72, 160, 160, 0) 94.88%);
+   background: #3A6262; /* fallback color */
+   background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
   background-size: 100%;
   background-position: left top, right bottom;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2330,9 +2322,8 @@ color: #FFFFFF;
 }
 #technology{
   width: 100%;
-    background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262;
+  background: #3A6262; /* fallback color */
+  background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titlet{
   position: absolute;
@@ -2398,9 +2389,8 @@ color: #FFFFFF;
 }
 #safety{
   width: 100%;
-  background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262; 
+  background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titles{
   position: absolute;
@@ -2784,8 +2774,8 @@ color: #FFFFFF;
   /* background: #111212;  fallback color */
   /* background: radial-gradient(ellipse at center, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%); */
    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  */
-   background: #3A6262; 
-   background: radial-gradient(circle at top left, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%), radial-gradient(circle at bottom right, #111212 0.83%, rgba(72, 160, 160, 0) 94.88%);
+   background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
   background-size: 100%;
   background-position: left top, right bottom;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -2857,9 +2847,8 @@ color: #FFFFFF;
 }
 #technology{
   width: 100%;
-    background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262;
+  background: #3A6262; /* fallback color */
+  background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titlet{
   position: absolute;
@@ -2925,9 +2914,8 @@ color: #FFFFFF;
 }
 #safety{
   width: 100%;
-  background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262; 
+  background: #3A6262; /* fallback color */
+  background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titles{
   position: absolute;
@@ -3146,9 +3134,8 @@ border-radius: 85px;
 }
 #safety{
     width: 1920px;
-    background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262; 
+    background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .titles{
     position: absolute;
@@ -3198,9 +3185,8 @@ top: 3980px;
 }
 #technology{
     width: 1920px;
-    background: radial-gradient(ellipse at 6.67% -111.37%, #111212 2.92%, rgba(72, 160, 160, 1) 94.88%);
-background-size: 292.43% 691.65%;
-background: #3A6262; 
+    background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 }
 .buttont{
     position: absolute;
@@ -3316,8 +3302,8 @@ width: 1920px;
 /* background: #111212;  fallback color */
 /* background: radial-gradient(ellipse at center, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%); */
  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  */
- background: #3A6262; 
- background: radial-gradient(circle at top left, #111212 0.83%, rgba(72, 160, 160, 1) 94.88%), radial-gradient(circle at bottom right, #111212 0.83%, rgba(72, 160, 160, 0) 94.88%);
+ background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
 background-size: 100%;
 background-position: left top, right bottom;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
