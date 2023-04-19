@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="App.css">
+	<title>Page Title</title>
+	<style>
+        body{
+            color: #000;
+        }
+	.expand_component {
+    position: relative;
+    width: 100%
+}
+
+.expand_component.disabled {
+    cursor: default
+}
+
+.expand_component.open .expand_arrow {
+    background-image: url(/media/expand_closed.652a0129d5770fa3cffd.svg)
+}
+
+.expand_component .cover_expand_arrow {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.expand_component .expand_arrow {
+    background-image: url(/media/expand_open.a809d2c958fcaace2664.svg);
+    cursor: pointer;
+    height: 16px;
+    width: 16px
+}
+
+@media (max-width: 767px) {
+    .expand_component .expand_arrow {
+        right:16px
+    }
+}
+
+.expand_component .expand_arrow.disabled {
+    opacity: .3;
+    pointer-events: none
+}
+
+.expand_component .expand_visible,.expand_component .expanded {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    text-align: left
+}
+
+.expand_component .expand_visible {
+    cursor: pointer;
+    transition: all .1s ease-out;
+    width: 100%
+}
+
+.expand_component .expand_row {
+    height: 0;
+    transition: all .1s ease-out
+}
+
+.footer {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-family: open-sans,sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: center;
+    white-space: nowrap;
+    width: 100%
+}
+
+@media (max-width: 1368px) {
+    .footer {
+        padding:68px 20px 0
+    }
+}
+
+.footer .footer_wrapper {
+    -webkit-margin-after: 92px;
+    border-top: 1px solid #e4e4e4;
+    margin-block-end:92px;max-width: 1369px;
+    width: 100%
+}
+
+@media (max-width: 1368px) {
+    .footer .footer_wrapper {
+        -webkit-margin-after:0;
+        display: flex;
+        flex-direction: column;
+        margin-block-end:0;padding: 0 20px
+    }
+}
+
+@media (max-width: 657px) {
+    .footer .footer_wrapper {
+        border-top:1px solid hsla(0,0%,89%,.16)
+    }
+}
+
+.footer .footer_wrapper h3 {
+    font-family: Barlow Semi Condensed;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.1;
+    padding-bottom: 20px
+}
+
+@media (max-width: 1368px) {
+    .footer .footer_wrapper h3 {
+        padding-bottom:0
+    }
+}
+
+.footer .footer_wrapper .site_map {
+    -webkit-padding-before: 109px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding-block-start:109px}
+
+@media (max-width: 1368px) {
+    .footer .footer_wrapper .site_map {
+        -webkit-padding-before:0;
+        -webkit-padding-start: 22px;
+        -webkit-padding-end: 22px;
+        -webkit-margin-after: 24px;
+        flex-direction: column;
+        margin-block-end:24px;order: 2;
+        padding-block-start:0;padding-inline-end:22px;padding-inline-start:22px}
+
+    .footer .footer_wrapper .site_map .category {
+        -webkit-padding-before: 25px;
+        -webkit-padding-after: 15px;
+        border-bottom: 1px solid hsla(0,0%,89%,.5);
+        padding-block-end:15px;padding-block-start:25px}
+}
+
+.footer .footer_wrapper .site_map .category.open .expand_visible {
+    -webkit-padding-after: 15px;
+    padding-block-end:15px}
+
+.footer .footer_wrapper .site_map .category .category_routes .nav_route {
+    color: hsla(0,0%,100%,.8);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 36px;
+    transition: color .2s ease-out;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
+}
+
+.footer .footer_wrapper .site_map .category .category_routes .nav_route:hover {
+    color: #fff;
+    transition: color .2s ease-in
+}
+
+.footer .footer_wrapper .site_info {
+    -webkit-margin-before: 45px;
+    align-items: center;
+    background: #1d1d1d;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-block-start:45px;padding: 31px 70px 29px 113px
+}
+
+@media (max-width: 1368px) {
+    .footer .footer_wrapper .site_info {
+        background:transparent;
+        justify-content: center;
+        margin: 0;
+        order: 3;
+        padding: 0
+    }
+}
+
+.footer .footer_wrapper .site_info a,.footer .footer_wrapper .site_info p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1
+}
+
+.footer .footer_wrapper .site_info .legal_contact {
+    align-items: center;
+    display: flex
+}
+
+@media (max-width: 657px) {
+    .footer .footer_wrapper .site_info .legal_contact {
+        flex-direction:column
+    }
+}
+
+.footer .footer_wrapper .footer_top_logo {
+    display: flex;
+    justify-content: center;
+    order: 1;
+    padding: 68px 0 40px
+}
+
+.footer .footer_wrapper .contact {
+    -webkit-padding-start: 32px;
+    align-items: center;
+    display: flex;
+    font-size: 1.4rem;
+    padding-inline-start:32px}
+
+@media (max-width: 1368px) {
+    .footer .footer_wrapper .contact {
+        -webkit-padding-start:0;
+        justify-content: flex-end;
+        padding-inline-start:0}
+}
+
+.footer .footer_wrapper .contact .email_forward_icon {
+    -webkit-margin-end: 10px;
+    background: url(/media/email_forward.b8726fc38557928aa825.svg) no-repeat;
+    background-size: contain;
+    height: 24px;
+    margin-inline-end:10px;width: 24px
+}
+
+@media (max-width: 657px) {
+    .footer .footer_wrapper .contact .email_forward_icon {
+        -webkit-margin-start:0;
+        margin-inline-start:0}
+}
+
+@media (max-width: 1368px) {
+    .footer .footer_wrapper .social_networks {
+        -webkit-padding-start:22px;
+        -webkit-padding-end: 22px;
+        -webkit-padding-after: 34px;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        order: 3;
+        padding-block-end:34px;padding-inline-end:22px;padding-inline-start:22px}
+
+    .footer .footer_wrapper .social_networks .contact,.footer .footer_wrapper .social_networks h3 {
+        -webkit-margin-after: 16px;
+        flex-basis: 50%;
+        line-height: 3.6rem;
+        margin-block-end:16px}
+}
+
+.footer .footer_wrapper .social_networks h3 {
+    text-align: left
+}
+
+@media (max-width: 1368px) {
+    .footer .footer_wrapper .social_networks h3 {
+        flex-basis:30%
+    }
+
+    .footer .footer_wrapper .social_networks .contact {
+        flex-basis: 70%
+    }
+}
+
+.footer .footer_wrapper .social_networks .social_link {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 36px;
+    opacity: .8;
+    transition: opacity .2s ease-out
+}
+
+.footer .footer_wrapper .social_networks .social_link:hover {
+    opacity: 1;
+    transition: opacity .2s ease-in
+}
+
+.footer .footer_wrapper .social_networks .social_link img {
+    -webkit-margin-end: 18px;
+    margin-inline-end:18px}
+
+@media (max-width: 657px) {
+    .footer .footer_wrapper .social_networks .social_link img {
+        -webkit-margin-end:0;
+        margin-inline-end:0}
+}
+
+.footer .footer_wrapper .terms {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.footer .footer_wrapper .terms p {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1
+}
+
+@media (max-width: 1368px) {
+    .footer .footer_wrapper .terms p {
+        line-height:36px;
+        padding-bottom: 4px
+    }
+}
+
+.footer .footer_wrapper .terms p:not(:last-child) {
+    -webkit-padding-end: 44px;
+    padding-inline-end:44px}
+
+
+	</style>
+</head>
+<body>
+	
+	<div class="footer"><div class="footer_wrapper"><div class="site_map"><div class="category"><h3>Technology</h3><div class="category_routes route_paths route_links"><ul class="paths"><li class="nav_route">The Trustchain Protocol</li><li class="nav_route">The COTI MultiDAG</li><li class="nav_route">Watch Simulation</li></ul><ul class="links"><li class="nav_route">Github</li><li class="nav_route">MultiDAG Lightpaper</li><li class="nav_route">Trustchain Whitepaper</li></ul></div></div><div class="category"><h3>Learn</h3><div class="category_routes route_paths "><ul class="paths"><li class="nav_route">Videos</li><li class="nav_route">Blog</li><li class="nav_route">Help Center</li></ul></div></div><div class="category"><h3>Ecosystem</h3><div class="category_routes route_paths "><ul class="paths"><li class="nav_route">The COTI Treasury</li><li class="nav_route">COTI Pay VIPER Wallet</li><li class="nav_route">Debit Cards And Bank Accounts</li><li class="nav_route">COTI Pay Business</li><li class="nav_route">Djed</li><li class="nav_route">ADA Pay</li><li class="nav_route">Crypto Volatility Index (CVI)</li></ul></div></div><div class="category"><h3>Network</h3><div class="category_routes route_paths route_links"><ul class="paths"><li class="nav_route">The COTI Coin</li></ul><ul class="links"><li class="nav_route">Explorer</li><li class="nav_route">Bridge</li></ul></div></div><div class="category"><h3>About</h3><div class="category_routes route_paths "><ul class="paths"><li class="nav_route">Team</li><li class="nav_route">Community</li><li class="nav_route">Careers</li></ul></div></div><div class="social_networks"><h3>Social</h3><div class="social_link"><div class="image_component   "><img src="/static/media/twitter.c5b1d3be29aa62f1ea75.svg" alt=""></div>Twitter</div><div class="social_link"><div class="image_component   "><img src="/static/media/discord.b938f74ea2f0d77698a6.svg" alt=""></div>Discord</div><div class="social_link"><div class="image_component   "><img src="/static/media/telegram.5ad6de778c56db3e5756.svg" alt=""></div>Telegram</div><div class="social_link"><div class="image_component   "><img src="/static/media/github.ecebadbc23c1511df59a.svg" alt=""></div>Github</div><div class="social_link"><div class="image_component   "><img src="/static/media/youtube.b30e90fbcadebb20a1d1.svg" alt=""></div>Youtube</div></div></div><div class="site_info"><div class="logo_component small"><div class="logo" title="COTI"></div></div><div class="legal_contact"><div class="terms"><p>Privacy Policy</p><p>Terms of Service</p><p>AML</p></div><a class="contact" href="mailto: contact@coti.io"><span class="email_forward_icon"></span>contact@coti.io</a></div></div></div></div>
+</body>
+</html>
