@@ -1972,7 +1972,7 @@ section.use_cases_section .use_cases_wrapper .use_case p {
     -webkit-margin-after: 92px;
     border-top: 1px solid #e4e4e4;
     margin-block-end: 92px;
-    max-width: 1920px;
+  
     width: 100%;
  padding-left: 25px;
     padding-right:480px ;
@@ -7718,11 +7718,11 @@ b {
 }
 
 .discord_icon {
-    background: url(/public/static/media/discord.b938f74ea2f0d77698a6.svg) no-repeat
+    background: url(public/static/media/discord.b938f74ea2f0d77698a6.svg) no-repeat
 }
 
 .facebook_icon {
-    background: url(/public/static/media/facebook.d5737ae6e6a0dbd2bb11.svg) no-repeat
+    background: url(public/static/media/facebook.d5737ae6e6a0dbd2bb11.svg) no-repeat
 }
 
 .instagram_icon {
@@ -7734,7 +7734,7 @@ b {
 }
 
 .github_icon {
-    background: url(/public/static/media/github.ecebadbc23c1511df59a.svg) no-repeat
+    background: url(public/static/media/github.ecebadbc23c1511df59a.svg) no-repeat
 }
 
 .reddit_icon {
@@ -7748,11 +7748,11 @@ b {
 }
 
 .telegram_icon {
-    background: url(/public/static/media/telegram.5ad6de778c56db3e5756.svg) no-repeat
+    background: url(public/static/media/telegram.5ad6de778c56db3e5756.svg) no-repeat
 }
 
 .youtube_icon {
-    background: url(/public/static/media/youtube.b30e90fbcadebb20a1d1.svg) no-repeat
+    background: url(public/static/media/youtube.b30e90fbcadebb20a1d1.svg) no-repeat
 }
 
 .linkedin_icon {
