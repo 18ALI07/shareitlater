@@ -14,8 +14,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Inter&family=M+PLUS+1&family=M+PLUS+1+Code:wght@500&family=M+PLUS+Code+Latin:wght@600&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
     <style>
-       
+    
        .logo_component .logo {
     background: url(shareitlater.png) no-repeat;
     background-size: contain;
@@ -86,11 +87,87 @@
 .footer .footer_wrapper .site_map .category .category_routes .nav_route {
     font-size: 23px;
 }}
+
+
+
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+ 
 </head>
 
-<body>
+<body style="background: #000;">
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
+    background-size: 100%;">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: none;">
+          <div class="modal-header" style="justify-content: center; color: white;">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Join the community for the latest updates!</h1>
+           
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-header" style="justify-content: center; color: white;">
+           
+            <h3 class="modal-title fs-5" id="exampleModalLabel">Stay up to date with the news and update release</h3>
+            
+          </div>
+          <form name="submit-to-google-sheet">
+          <div class="modal-body">
+           
+              <div class="mb-3">
+                
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="Enter Your Name">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control bg-info" id="recipient-name" name="email"  placeholder="Enter Your Email">
+               
+              </div>
+           
+          </div>
+          <div class="modal-footer" style="justify-content: center;">
+            
+            <button type="submit" class="btn btn-dark"  onclick="event.preventDefault(); return verify()">Join the Community</button>
+            <!--  -->
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" style="background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
+    background-size: 100%;">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background:none;">
+           
+            <div class="modal-body" style="justify-content: center; color: white;  display: flex; font-size: larger;" >
+                Thanks for registering with us !
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" style="background: #3A6262; /* fallback color */
+      background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
+      background-size: 100%;">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background:none;">
+           
+            <div class="modal-body" style="justify-content: center; color: white;  display: flex; font-size: larger;" >
+                Email Already Exists
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- <script src='blockfrost.js'></script> -->
+    
     <section id="startpage">
+        
         <header class="Rectangle1">
             <nav class="rectangle2">
                 <div class="logo">
@@ -117,7 +194,7 @@
                 <div class="item6"><a href="#" style="text-decoration: none; color: white;">Log in</a></div>
                 <div class="item7"><img src="Line1.png" alt="Line"></div>
                 <div class="item8"><a href="#" style="text-decoration: none; color: white;">Sign Up</a></div>
-                <div class="item9">
+                <div class="item9" id="button" style="cursor: pointer;">
                     <div class="item10">Connect wallet</div>
                 </div>
 
@@ -137,6 +214,41 @@
             <p class="later">
                 later
             </p>
+            
+
+
+
+<script type="module">
+    var button=document.getElementById("button");
+
+async function connectWallet(){
+if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined')
+return;
+window. cardano.nami.enable()
+.then(
+    api=>{
+
+api.getUsedAddresses()
+.then (addy=>{
+console. log(addy) ;
+});
+    }
+);
+}
+button.onclick=connectWallet;
+// fetch('https://cardano-preprod.blockfrost.io/api/v0/', {
+//   headers: {
+//     'Content-Type': 'application/json',
+//     'Project-ID': 'preprodWM7tWLXV1F1xyDszN6Nxn8MhKtewv0Mi'
+//   }
+// })
+// .then(response => response.json())
+// .then(data => {
+//   document.getElementById('asset-name').innerText = data.name;
+//   document.getElementById('asset-quantity').innerText = data.quantity;
+// });
+</script>
+
         </header>
     </section>
     <section id="whyshareitlater">
@@ -216,16 +328,20 @@
     
     </section>
     <section id="footer">
-        <div class="info">
+        <div class="info" 
+        >
+            
             <div class="titlei">
                 Join the community for the latest updates!
             </div>
             <div class="desci">
                 Stay up to date with the news and update release
             </div>
-            <div class="buttoni">
+            <div class="buttoni" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" onclick="">
                 <div class="contenti">Join the Community</div>
             </div>
+            
+        
             <div class="footer" style="position: absolute;
         top: 800px;">
                 <div class="footer_wrapper">
@@ -337,6 +453,152 @@
     <script type="text/javascript">
         ScrollOut({targets:'div'});
     </script>
+    <script>
+        //   function check(){
+        //     const scriptURL = 'https://script.google.com/macros/s/AKfycbzFg4zKE2M6NIrluxnHfloS8vQpyvzGcTD6zJFq9swa9sD2V-6Pf4J-TZMrH9DdT8Ll/exec';
+        //     const form = document.forms['submit-to-google-sheet'];
+            
+        //     form.addEventListener('submit', (e) => {
+        //   e.preventDefault();
+        //   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        //     .then(response => {
+        //         console.log(response);
+              
+        //       if (response.ok) {
+        //         return response.json();
+        //       } else {
+        //         throw new Error('Network response was not ok.');
+        //       }
+        //     })
+        //     .then(data => {
+        //       console.log(data);
+             
+              
+        //     })
+        //     .catch(error => console.error('Error!', error.message));
+        // });
+        
+        //   }
+            
+            async function loadData(arr) {
+          const url ='https://script.google.com/macros/s/AKfycbxgS9TAopiANg_7jAkC2Slf_xItyvs1SBW4LHgOqSli_bV6NcgevKn0uFVyPNOLlb-L/exec';
+          try {
+            const response = await fetch(url);
+            const data = await response.json();
+            data.data.forEach(ele => {
+              arr.push(ele);
+              
+            });
+          } catch (error) {
+            console.error('Error fetching data:', error);
+          }
+        }
+        
+        async function verify() {
+          if (document.getElementById('recipient-name').value){
+          let arr = [];
+          loadData(arr)
+            .then(() => {
+              // console.log(arr);
+              var bool = false;
+              for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === document.getElementById('recipient-name').value) {
+            bool = true;
+            // console.log("exec");
+            break;
+          }
+        }
+        
+              console.log(bool);
+              var modalToggle = document.querySelector("#exampleModal");
+              console.log(bool)
+              if (bool===true) {
+                $('#exampleModal').modal('hide');
+                // to show alerts
+                // var alertDiv = document.createElement('div');
+                // alertDiv.classList.add('alert', 'alert-warning', 'alert-dismissible', 'fade', 'show');
+                // alertDiv.innerHTML = 'Email already exist';
+                // var button = document.createElement('button');
+                // button.type = 'button';
+                // button.classList.add('btn-close');
+                // button.setAttribute('data-bs-dismiss', 'alert');
+                // button.setAttribute('aria-label', 'Close');
+                // alertDiv.appendChild(button);
+                // document.body.appendChild(alertDiv);
+                $('#exampleModalToggle1').modal('show');
+        setTimeout(function() {
+          $('#exampleModalToggle1').modal('hide');
+        }, 3000);
+                // setTimeout(function() {
+                //   alertDiv.remove();
+                 
+                // }, 5000);
+              } else if(bool===false) {
+                $('#exampleModal').modal('hide');
+                // to show alert
+                // var alertDiv = document.createElement('div');
+                // alertDiv.classList.add('alert', 'alert-success', 'alert-dismissible', 'fade', 'show');
+                // alertDiv.innerHTML = '<strong>Thanks</strong> For register!';
+                // var button = document.createElement('button');
+                // button.type = 'button';
+                // button.classList.add('btn-close');
+                // button.setAttribute('data-bs-dismiss', 'alert');
+                // button.setAttribute('aria-label', 'Close');
+                // alertDiv.appendChild(button);
+                // document.body.appendChild(alertDiv);
+                $('#exampleModalToggle2').modal('show');
+        setTimeout(function() {
+          $('#exampleModalToggle2').modal('hide');
+        }, 3000);
+                // setTimeout(function() {
+                //   alertDiv.remove();
+                 
+                // }, 5000);
+                
+                // Add the fetch function to submit data to the Google Sheet
+                const form = document.forms['submit-to-google-sheet'];
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbzFg4zKE2M6NIrluxnHfloS8vQpyvzGcTD6zJFq9swa9sD2V-6Pf4J-TZMrH9DdT8Ll/exec';
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => {
+                    console.log(response);
+                    if (response.ok) {
+                      return response.json();
+                    } else {
+                      throw new Error('Network response was not ok.');
+                    }
+                  })
+                  .then(data => {
+                    console.log(data);
+                  })
+                  .catch(error => console.error('Error!', error.message));
+              }
+            });
+            history.replaceState({}, document.title, window.location.pathname);
+          }
+          else{
+            // $('#exampleModal').modal('hide');
+            alert("enter the data Before submitting");
+            var alertDiv = document.createElement('div');
+                alertDiv.classList.add('alert', 'alert-danger', 'alert-dismissible', 'fade', 'show');
+                alertDiv.innerHTML = '<strong>Enter Your Data</strong>';
+                var button = document.createElement('button');
+                button.type = 'button';
+                button.classList.add('btn-close');
+                button.setAttribute('data-bs-dismiss', 'alert');
+                button.setAttribute('aria-label', 'Close');
+                alertDiv.appendChild(button);
+                alertDiv.style.zIndex='1';
+                document.body.appendChild(alertDiv);
+                setTimeout(function() {
+                  alertDiv.remove();
+                 
+                }, 5000);
+          }
+          
+        }
+        
+        
+        </script>
 </body>
 
 </html>

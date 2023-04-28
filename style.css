@@ -1,4 +1,74 @@
 
+.logo_component .logo {
+  background: url(shareitlater.png) no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 121px;
+}
+.logo_component.small .logo {
+  height: 100px;
+  width: 122px;
+  margin-right: 0px;
+}
+     @media screen and (min-width:2001px) {
+      .footer .footer_wrapper {
+  -webkit-margin-after: 92px;
+  border-top: 1px solid #e4e4e4;
+  margin-block-end: 0px;
+  width: 100%;
+  padding-left: 86px;
+  padding-right: 130px;
+}
+.footer .footer_wrapper .terms p:not(:last-child) {
+  -webkit-padding-end: 44px;
+  padding-inline-end: 157px;
+}
+     
+     .logo_component .logo {
+  background: url(shareitlater.png) no-repeat;
+  background-size: contain;
+  height: 39px;
+  width: 121px;
+}
+.footer .footer_wrapper .terms {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-right: 317px;
+}
+.logo_component.small .logo {
+  height: 100px;
+  width: 122px;
+  margin-right: 55px;
+}
+     .footer {
+  font-size: 40px;
+}
+.footer .footer_wrapper .site_info {
+  -webkit-margin-before: 45px;
+  align-items: center;
+  background: #1d1d1d;
+  background: radial-gradient(ellipse at 30.97% 57.88%, #1B7B99 0%, rgba(55, 108, 157, 0.0677083) 93.23%, rgba(58, 255, 220, 0) 100%, rgba(58, 255, 220, 0) 100%, rgba(124, 161, 154, 0) 100%);
+  background-size: 100% 596.28%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 21px;
+  padding: 31px 100% 29px 0px;
+}
+.footer .footer_wrapper .site_map {
+  -webkit-padding-before: 109px;
+  align-items: flex-start;
+  font-size: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-block-start: 60px;
+}
+
+.footer .footer_wrapper .site_map .category .category_routes .nav_route {
+  font-size: 23px;
+}}
 /* * {
   outline: 1px solid #f00 !important;
 } */
@@ -2483,7 +2553,7 @@ border-radius: 85px;
   position: absolute;
     width: 100%;
     height: 158px;
-    padding-left: 1em;
+    padding-left: 2em;
     top: 20px;
     font-family: 'Monda';
     font-style: normal;
@@ -2498,6 +2568,7 @@ border-radius: 85px;
   height: 75px;
   left: 122px;
   top: 200px;
+  padding-left: 2em;
   font-family: 'Monda';
   font-style: normal;
   font-weight: 700;
@@ -2510,7 +2581,7 @@ border-radius: 85px;
   position: absolute;
   width: 568px;
   height: 139px;
-  left: 179px;
+  left: 17em;
   top: 324px;
   background: #000000;
   border-radius: 20px;
@@ -2520,7 +2591,8 @@ border-radius: 85px;
   width: 9em;
   height: 57px;
   top: 30px;
-      left: 15px;
+      left: 1.5em;
+     
   font-family: 'Monda';
   font-style: normal;
   font-weight: 700;
