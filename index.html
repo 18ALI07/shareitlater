@@ -561,7 +561,7 @@ button.onclick=connectWallet;
                 // }, 5000);
                 
                 // Add the fetch function to submit data to the Google Sheet
-                const form = document.forms['submit-to-google-sheet'];
+                // const form = document.forms['submit-to-google-sheet'];
                 const scriptURL = 'https://script.google.com/macros/s/AKfycbzFg4zKE2M6NIrluxnHfloS8vQpyvzGcTD6zJFq9swa9sD2V-6Pf4J-TZMrH9DdT8Ll/exec';
                 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                   .then(response => {
