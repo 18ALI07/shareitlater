@@ -495,7 +495,7 @@ button.onclick=connectWallet;
         }
         
         async function verify() {
-            const form = document.forms['submit-to-google-sheet'];
+        const form = document.forms['submit-to-google-sheet'];
           if (document.getElementById('recipient-name').value){
           let arr = [];
           loadData(arr)
@@ -537,7 +537,8 @@ button.onclick=connectWallet;
                  
                 // }, 5000);
               } else if(bool===false) {
-                form.reset();
+                
+               
                 $('#exampleModal').modal('hide');
                 // to show alert
                 // var alertDiv = document.createElement('div');
@@ -575,6 +576,8 @@ button.onclick=connectWallet;
                     console.log(data);
                   })
                   .catch(error => console.error('Error!', error.message));
+                 form.reset();
+
               }
             });
             history.replaceState({}, document.title, window.location.pathname);
