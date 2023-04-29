@@ -14,7 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Inter&family=M+PLUS+1&family=M+PLUS+1+Code:wght@500&family=M+PLUS+Code+Latin:wght@600&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
+      
     <style>
     
        .logo_component .logo {
@@ -97,6 +97,12 @@
 
 <body style="background: #000;">
 
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- <script src='blockfrost.js'></script> -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background: #3A6262; /* fallback color */
     background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
     background-size: 100%;">
@@ -147,6 +153,18 @@
           </div>
         </div>
       </div>
+      <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" style="background: #3A6262; /* fallback color */
+      background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
+      background-size: 100%;">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" id="address" style="background:none; color: white; overflow-wrap: break-word;">
+              
+             
+  
+              
+            </div>
+          </div>
+        </div>
       <div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" style="background: #3A6262; /* fallback color */
       background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
       background-size: 100%;">
@@ -160,11 +178,6 @@
           </div>
         </div>
       </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
-    <!-- <script src='blockfrost.js'></script> -->
     
     <section id="startpage">
         
@@ -188,14 +201,18 @@
                 </a>
 
 
-                <a class="item5" href="#" style="text-decoration: none;">
+                <!-- <a class="item5" href="#" style="text-decoration: none;">
                     <div></div>
-                </a>
-                <div class="item6"><a href="#" style="text-decoration: none; color: white;">Log in</a></div>
-                <div class="item7"><img src="Line1.png" alt="Line"></div>
-                <div class="item8"><a href="#" style="text-decoration: none; color: white;">Sign Up</a></div>
-                <div class="item9" id="button" style="cursor: pointer;">
-                    <div class="item10">Connect wallet</div>
+                </a> -->
+                
+                <div class="item6" id="addbtn"  style="cursor: pointer;"><a  disabled style="text-decoration: none; color: white;">View Address</a></div> 
+                <!-- <div class="item7"><img src="Line1.png" alt="Line"></div>
+                <div class="item8"><a href="#" style="text-decoration: none; color: white;">Sign Up</a></div>  -->
+                <div class="item9" id="button" style="cursor: pointer; display: flex; justify-content: center;">
+                    <div class="item10" id="content">Connect wallet</div>
+                    <div class="dropdown">
+
+                    </div>
                 </div>
 
             </nav>
@@ -219,6 +236,56 @@
 
 
 <script type="module">
+    import {Address} from './node_modules/@emurgo/cardano-serialization-lib-asmjs/cardano_serialization_lib.js';
+
+    const addbtn=document.getElementById('addbtn');
+  async  function viewaddress(){
+        if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined')
+return;
+// console.log("invoked");
+    window. cardano.nami.enable()
+.then(
+    api=>{
+
+api.getUsedAddresses()
+.then (addy=>{
+    const bech32Address= Address.from_hex(addy[0]).to_bech32();
+    const address=document.getElementById("address");
+    address.innerHTML= bech32Address;
+    $('#exampleModalToggle3').modal('show');
+        setTimeout(function() {
+          $('#exampleModalToggle3').modal('hide');
+        }, 3000);
+
+}
+);
+})
+}
+async function writeherepage(){
+if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined')
+return;
+// console.log("invoked");
+    window. cardano.nami.enable()
+.then(
+    api=>{
+
+api.getUsedAddresses()
+.then (addy=>{
+    if(content.innerHTML==="Connect wallet"){
+            window.location.href = "write.html";
+    }
+    else{
+        window.location.href = "write_connected.html";
+    }
+
+}
+);
+})
+}
+const writehere=document.getElementById("writehere");
+writehere.onclick=writeherepage;
+
+addbtn.onclick=viewaddress;
     var button=document.getElementById("button");
 
 async function connectWallet(){
@@ -230,12 +297,31 @@ window. cardano.nami.enable()
 
 api.getUsedAddresses()
 .then (addy=>{
-console. log(addy) ;
+    const bech32Address= Address.from_hex(addy[0]).to_bech32();
+    const content=document.getElementById("content");
+ 
+    // button.style.width='50%';
+    content.style.width='9em';
+    if(content.innerHTML==="Connect wallet"){
+        const addbutton = document.getElementById("addbtn");
+        addbutton.style.display='flex';
+        
+    }
+    content.innerHTML="Wallet Connected";
+    const button=document.getElementById("button");
+    button.style.marginTop='10px';
+
+    
+    
+    
+
+
 });
     }
 );
 }
 button.onclick=connectWallet;
+ 
 // fetch('https://cardano-preprod.blockfrost.io/api/v0/', {
 //   headers: {
 //     'Content-Type': 'application/json',
@@ -272,7 +358,7 @@ button.onclick=connectWallet;
 
 
             </div>
-            <div class="button">
+            <div class="button" id="writehere" style="cursor: pointer;">
                 <div class="content">write here</div>
             </div>
         </div>
@@ -351,7 +437,7 @@ button.onclick=connectWallet;
                             <div class="category_routes route_paths route_links">
                                 <ul class="paths">
                                     <li class="nav_route">The Trustchain Protocol</li>
-                                    <li class="nav_route">The COTI MultiDAG</li>
+                                    <li class="nav_route">The Shareitlater MultiDAG</li>
                                     <li class="nav_route">Watch Simulation</li>
                                 </ul>
                                 <ul class="links">
@@ -375,10 +461,10 @@ button.onclick=connectWallet;
                             <h3>Ecosystem</h3>
                             <div class="category_routes route_paths ">
                                 <ul class="paths">
-                                    <li class="nav_route">The COTI Treasury</li>
-                                    <li class="nav_route">COTI Pay VIPER Wallet</li>
+                                    <li class="nav_route">The Shareitlater Treasury</li>
+                                    <li class="nav_route">Shareitlater Pay VIPER Wallet</li>
                                     <li class="nav_route">Debit Cards And Bank Accounts</li>
-                                    <li class="nav_route">COTI Pay Business</li>
+                                    <li class="nav_route">Shareitlater Pay Business</li>
                                     <li class="nav_route">Djed</li>
                                     <li class="nav_route">ADA Pay</li>
                                     <li class="nav_route">Crypto Volatility Index (CVI)</li>
@@ -389,7 +475,7 @@ button.onclick=connectWallet;
                             <h3>Network</h3>
                             <div class="category_routes route_paths route_links">
                                 <ul class="paths">
-                                    <li class="nav_route">The COTI Coin</li>
+                                    <li class="nav_route">The Shareitlater Coin</li>
                                 </ul>
                                 <ul class="links">
                                     <li class="nav_route">Explorer</li>
@@ -448,6 +534,7 @@ button.onclick=connectWallet;
                 </div>
             </div>
         </div>
+        
     </section>
     <script src="scroll-out.js"></script>
     <script type="text/javascript">
@@ -479,6 +566,7 @@ button.onclick=connectWallet;
         // });
         
         //   }
+        
             
             async function loadData(arr) {
           const url ='https://script.google.com/macros/s/AKfycbxgS9TAopiANg_7jAkC2Slf_xItyvs1SBW4LHgOqSli_bV6NcgevKn0uFVyPNOLlb-L/exec';
@@ -606,6 +694,7 @@ button.onclick=connectWallet;
         
         
         </script>
+       
 </body>
 
 </html>

@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "@blockfrost/blockfrost-js": "^5.3.1"
+    "@blockfrost/blockfrost-js": "^5.3.1",
+    "@emurgo/cardano-serialization-lib-asmjs": "^11.4.0",
+    "axios": "^1.4.0"
   }
 }

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Write Here</title>
+ <style>
+   #selbchain{
+    display: none;
+   }
+    form input{
+        width: 80%;
+        
+    }
+    .flex1{
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+    img {
+  border: none;
+  border-radius: 50%;
+}
+    .flexbox{
+        display:flex;
+        flex-direction: column;
+    }
+    @media screen and (max-width:767px) {
+       
+        .img1{
+        background-image: url(bnb.png);
+  background-size: cover;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  border: none;;
+  /* margin-right: 10px; */
+    }
+    .img2{
+        background-image: url(Ethereum.png);
+  background-size: cover;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  /* margin-right: 10px; */
+    }
+    .img3{
+        background-image: url(polygon.png);
+  background-size: cover;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  /* margin-right: 10px; */
+    }
+        .heading{
+font-size: medium;
+        }
+        .flexboxx .trustee h4,h5{
+            font-size: 10px;
+        }
+    
+    .card-title{
+font-size: medium;
+        }
+    }
+    @media screen and (min-width:768px) {
+        
+        .img1{
+        background-image: url(bnb.png);
+  background-size: cover;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  /* margin-right: 10px; */
+    }
+    .img2{
+        background-image: url(Ethereum.png);
+  background-size: cover;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  /* margin-right: 10px; */
+    }
+    .img3{
+        background-image: url(polygon.png);
+  background-size: cover;
+  background-position: center;
+  width: 60px;
+  height: 60px;
+  /* margin-right: 10px; */
+    }
+    .card-title{
+font-size: 2.5em;
+        }
+        
+    }
+    #startpage2{
+    
+    width: 100%;
+    height: 1080px;
+    background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
+    
+    scroll-snap-align: start;
+    
+    
+    }
+    #addbtn{
+        display: flex;
+    }
+    
+ </style>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <section id="startpage">
+        
+        <header class="Rectangle1">
+    <nav class="rectangle2">
+        <div class="logo">
+            <a class="midlogo" href="index.html"></a>
+        </div>
+
+        
+        <div class="item6" id="addbtn"  style="cursor: pointer;background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+        background-blend-mode: lighten;
+        border-radius: 20px;"><a  disabled style="text-decoration: none; color: white; display: flex;">View Address</a></div> 
+
+       
+        
+       
+        <div class="item9" id="button" style="cursor: pointer; display: flex; justify-content: center;background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+        background-blend-mode: lighten;
+        border-radius: 20px; margin-top: 10px;">
+            <div class="item10" id="content">Wallet Connected</div>
+            
+            <div class="dropdown">
+
+            </div>
+        </div>
+
+    </nav>
+    </header>
+    <div class="container" style="color: white;background: none; ">
+        <div class="row" >
+          <div class="col-12">
+            <h1 class="heading" id="heading" style="display: flex;font-weight: 100; justify-content: center;align-items: center;margin-top: 10%;">Write here now, we will share it later</h1>
+          </div>
+        </div>
+      </div>
+      <div class="upbox" style="display: flex; justify-content: center;align-items: center;">
+      
+      <div class="card text-center" style="margin-top:2%;background: linear-gradient(0.31deg, #26B8B8 -1358.45%, rgba(38, 184, 184, 0) 113.86%);
+      border-radius: 35px; color: white;">
+        
+        <div class="card-body" id="oldmodal">
+         
+          <div class="flexbox" id="flexbox">
+          <div href="#" class="btn btn-primary"  id="wfree" style="margin-top: 10%;background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+          background-blend-mode: lighten;
+          border-radius: 20px;">Start Writing here for Free</div>
+              <div href="#" class="btn btn-primary" id="wpaid" style="margin-top: 10%;background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+              background-blend-mode: lighten;
+              border-radius: 20px;">Start writing here</div>
+          <div href="#" class="btn btn-primary"   style="margin-top: 10%;background: none;
+          border-radius: 20px;">View your DAO</div>
+          <div href="#" class="btn btn-primary"   style="margin-top: 10%;background: none;
+          border-radius: 20px;">Trustee & Successor</div>
+      </div>
+          
+        
+      </div>
+      </div>
+      <div class="upbox" style="display: flex; justify-content: center;align-items: center;">
+        <!-- <div class="card text-center mb-3" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div> -->
+        <div class="card text-center selbchain" id="selbchain" style="margin-top:2%;background: linear-gradient(0.31deg, #26B8B8 -1358.45%, rgba(38, 184, 184, 0) 113.86%);
+        border-radius: 35px; color: white;">
+          
+          <div class="card-body" >
+            <h5 class="card-title" style="font-weight: 100;">SELECT BLOCKCHAIN</h5>
+            <div class="flex1" >
+                <div href="#" class="btn btn-primary" id="button1"  style="margin-top: 10%;background: none;
+            border-radius: 20px;"><img class="img1">BNBchain</div>
+             <div href="#" class="btn btn-primary" id="button1"  style="margin-top: 10%;background: none;
+             border-radius: 20px;"><img class="img2">Ethereum</div>
+              <div href="#" class="btn btn-primary" id="button1"  style="margin-top: 10%;background: none;
+              border-radius: 20px;"><img class="img3">Polygon</div>
+            </div>
+         
+            <div class="flexboxx" id="flexbox" style="margin-top: 20px;"  >
+            <form action="" class="trustee">
+               <h4 style="font-weight: 400;">NAME YOUR  ShareitLater DAO</h4>
+              <div class="mb-3">
+                
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="Your DAO name">
+              </div>
+              <h4 style="font-weight: 400;">ENTER YOUR SUCCESSORS’ CRYPTO WALLET ADDRESSES</h4>
+              <h5 style="color: rgba(255, 255, 255, 0.7); font-weight: 600; text-transform: uppercase;
+              ">1 successor on free subscription</h5>
+              <div class="mb-3">
+                <input type="email" class="form-control bg-info" id="recipient-name" name="email"  placeholder="SUCCESSORS’WALLET">
+               
+              </div>
+              <div class="mb-3">
+                
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="SUCCESSORS’EMAIL">
+              </div>
+              <h4 style="font-weight: 400;">ENTER YOUR TRUSTEES’ CRYPTO WALLET ADDRESSES
+            </h4>
+              <h5 style="color: rgba(255, 255, 255, 0.7); font-weight: 600; text-transform: uppercase;
+              ">2-4 Trustees
+            </h5>
+              <div class="mb-3">
+                <input type="email" class="form-control bg-info" id="recipient-name" name="email"  placeholder="TRUSTEES’WALLET">
+               
+              </div>
+              <div class="mb-3">
+                
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="TRUSTEES’EMAIL">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control bg-info" id="recipient-name" name="email"  placeholder="TRUSTEES’WALLET">
+               
+              </div>
+              <div class="mb-3">
+                
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="TRUSTEES’EMAIL">
+              </div>
+             
+                </form>
+        </div>
+        
+            <div href="#" class="btn btn-primary" id="button1"  style="margin-top: 10%;background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+            background-blend-mode: lighten;
+            border-radius: 20px;">ADD TRUSTEE</div>
+          </div>
+          
+        </div>
+        </div>
+  
+
+    <!-- <h3 style="color: white;"> Write here now, we will share it later</h3> -->
+    </section>
+    <section id="startpage2"></section>
+    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" style="background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
+    background-size: 100%;">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" id="address" style="background:none; color: white; overflow-wrap: break-word;">
+            
+           
+
+            
+          </div>
+        </div>
+      </div>
+    <script type="module">
+        import {Address} from './node_modules/@emurgo/cardano-serialization-lib-asmjs/cardano_serialization_lib.js';
+    
+        const addbtn=document.getElementById('addbtn');
+      async  function viewaddress(){
+            if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined')
+    return;
+    // console.log("invoked");
+        window. cardano.nami.enable()
+    .then(
+        api=>{
+    
+    api.getUsedAddresses()
+    .then (addy=>{
+        const bech32Address= Address.from_hex(addy[0]).to_bech32();
+        const address=document.getElementById("address");
+        address.innerHTML= bech32Address;
+        $('#exampleModalToggle3').modal('show');
+            setTimeout(function() {
+              $('#exampleModalToggle3').modal('hide');
+            }, 3000);
+
+    }
+    );
+    })
+    }
+    function selectfree(){
+        const flexbox=document.getElementById('flexbox');
+        const oldmodal=document.getElementById('oldmodal');
+
+        flexbox.style.display='none';
+        oldmodal.style.display='none';
+        const selectfree=document.getElementById('selbchain');
+        selectfree.style.display='flex';
+    }
+    const selecbchain=document.getElementById('wfree');
+    selecbchain.onclick=selectfree;
+    addbtn.onclick=viewaddress;
+        const button=document.getElementById("button");
+        const button1=document.getElementById("button1");
+        
+    
+    async function connectWallet(){
+    if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined')
+    return;
+    window. cardano.nami.enable()
+    .then(
+        api=>{
+    
+    api.getUsedAddresses()
+    .then (addy=>{
+        const bech32Address= Address.from_hex(addy[0]).to_bech32();
+        const content=document.getElementById("content");
+     
+        // button.style.width='50%';
+        
+        const button1=document.getElementById("button1");
+        button1.style.display='none';
+        const conntit=document.getElementById('conntit');
+        conntit.style.display='none';
+        const flexbox=document.getElementById('flexbox');
+        flexbox.style.display='flex';
+        
+
+        
+        
+
+
+        content.style.width='9em';
+        if(content.innerHTML==="Connect wallet"){
+            const addbutton = document.getElementById("addbtn");
+            addbutton.style.display='flex';
+            
+        }
+        content.innerHTML="Wallet Connected";
+        const button=document.getElementById("button");
+        button.style.marginTop='10px';
+    
+        
+        
+        
+    
+    
+    });
+        }
+    );
+    }
+    button.onclick=connectWallet;
+    button1.onclick=connectWallet;
+     
+    // fetch('https://cardano-preprod.blockfrost.io/api/v0/', {
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //     'Project-ID': 'preprodWM7tWLXV1F1xyDszN6Nxn8MhKtewv0Mi'
+    //   }
+    // })
+    // .then(response => response.json())
+    // .then(data => {
+    //   document.getElementById('asset-name').innerText = data.name;
+    //   document.getElementById('asset-quantity').innerText = data.quantity;
+    // });
+    </script>
+</body>
+</html>
