@@ -16,7 +16,9 @@
         rel="stylesheet">
       
     <style>
-    
+    #alerts{
+        display: none;
+    }
        .logo_component .logo {
     background: url(shareitlater.png) no-repeat;
     background-size: contain;
@@ -103,6 +105,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
     <!-- <script src='blockfrost.js'></script> -->
+   
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background: #3A6262; /* fallback color */
     background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
     background-size: 100%;">
@@ -180,7 +183,7 @@
       </div>
     
     <section id="startpage">
-        
+        <div class="alert alert-warning alert-dismissible fade show" id="alerts">No Cardano Extension found<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>
         <header class="Rectangle1">
             <nav class="rectangle2">
                 <div class="logo">
@@ -188,7 +191,7 @@
                 </div>
 
                 <a class="item1" href="index.html#whyshareitlater" style="text-decoration: none;">
-                    <div>why Shareitlater?</div>
+                    <div>Why Shareitlater?</div>
                 </a>
                 <a class="item2" href="technology.html" style="text-decoration: none;">
                     <div>Technology</div>
@@ -262,8 +265,29 @@ api.getUsedAddresses()
 })
 }
 async function writeherepage(){
-if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined')
+if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined'){
+    // to show alerts
+                // var alertDiv = document.createElement('div');
+                // alertDiv.classList.add('alert', 'alert-danger', 'alert-dismissible', 'fade', 'show');
+                // alertDiv.innerHTML = 'No Cardano Extension found';
+                // var button = document.createElement('button');
+                // button.type = 'button';
+                // button.classList.add('btn-close');
+                // button.setAttribute('data-bs-dismiss', 'alert');
+                // button.setAttribute('aria-label', 'Close');
+                // alertDiv.appendChild(button);
+                // document.body.appendChild(alertDiv);
+                // const alert=document.getElementById("alerts");
+                // alert.style.display="block";
+                // setTimeout(function() {
+                //     alert.style.display="none";
+                 
+                // }, 3000);
+                alert("No Cardano Wallet Found \n Add To Continue");
+                window.location.href = 'https://chrome.google.com/webstore/detail/nami/lpfcbjknijpeeillifnkikgncikgfhdo';
+                // console.log("not found");
 return;
+}
 // console.log("invoked");
     window. cardano.nami.enable()
 .then(
@@ -286,11 +310,30 @@ const writehere=document.getElementById("writehere");
 writehere.onclick=writeherepage;
 
 addbtn.onclick=viewaddress;
-    var button=document.getElementById("button");
+var button=document.getElementById("button");
 
 async function connectWallet(){
-if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined')
+if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined'){
+// var alertDiv = document.createElement('div');
+//                 alertDiv.classList.add('alert', 'alert-warning', 'alert-dismissible', 'fade', 'show');
+//                 alertDiv.innerHTML = 'No Cardano Extension found';
+//                 var button = document.createElement('button');
+//                 button.type = 'button';
+//                 button.classList.add('btn-close');
+//                 button.setAttribute('data-bs-dismiss', 'alert');
+//                 button.setAttribute('aria-label', 'Close');
+//                 alertDiv.appendChild(button);
+                // document.body.appendChild(alertDiv);
+                // alertDiv.style.display='block';
+                // setTimeout(function() {
+                //   alertDiv.remove();
+                 
+                // }, 5000);
+                // console.log("not found");
+                alert("No Cardano Wallet Found \n Add To Continue");
+                window.location.href = 'https://chrome.google.com/webstore/detail/nami/lpfcbjknijpeeillifnkikgncikgfhdo';
 return;
+                }
 window. cardano.nami.enable()
 .then(
     api=>{
@@ -340,7 +383,7 @@ button.onclick=connectWallet;
     <section id="whyshareitlater">
         <div class="wrapper">
             <div class="title">
-                why Shareitlater?
+                Why Shareitlater?
             </div>
             <div class="left">
 
@@ -390,7 +433,7 @@ button.onclick=connectWallet;
 
     <section id="safety">
         <div class="titles">
-            safety
+            Safety
         </div>
         <div class="lefts">
 

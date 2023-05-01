@@ -177,7 +177,7 @@ font-size: 2.5em;
           <div href="#" class="btn btn-primary"   style="margin-top: 10%;background: none;
           border-radius: 20px;">Trustee & Successor</div>
       </div>
-          <div href="#" class="btn btn-primary" id="button1"  style="margin-top: 10%;background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+          <div href="#" class="btn btn-primary" id="button1" style="margin-top: 10%;background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
           background-blend-mode: lighten;
           border-radius: 20px;">Connect Wallet</div>
         </div>
@@ -314,17 +314,24 @@ font-size: 2.5em;
     addbtn.onclick=viewaddress;
         const button=document.getElementById("button");
         const button1=document.getElementById("button1");
+      
         
     
     async function connectWallet(){
-    if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined')
+    if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined'){
+      alert("No Cardano Wallet Found \n Add To Continue");
+      window.location.href = 'https://chrome.google.com/webstore/detail/nami/lpfcbjknijpeeillifnkikgncikgfhdo';
     return;
+    }
     window. cardano.nami.enable()
     .then(
         api=>{
     
     api.getUsedAddresses()
     .then (addy=>{
+      
+                window.location.href = 'write_connected.html';
+
         const bech32Address= Address.from_hex(addy[0]).to_bech32();
         const content=document.getElementById("content");
      

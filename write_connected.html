@@ -9,10 +9,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Write Here</title>
  <style>
+  .subbtn button{
+/* width:80px; */
+/* height: 80px; */
+
+margin-right: 10px;
+      }
+  .heading{
+    margin-top: 10%;
+  }
+  #fileupload{
+    display: none;
+  }
    #selbchain{
     display: none;
    }
     form input{
+        width: 80%;
+        
+    }
+    form textarea{
         width: 80%;
         
     }
@@ -30,16 +46,76 @@
         display:flex;
         flex-direction: column;
     }
+    @media screen and (min-width:1900px) {
+      .flexboxx .trustee h4,h5,input,button{
+            font-size: 40px;
+        }
+        .btn.btn-primary{
+        /* height: 100px; */
+        font-size: xx-large;
+      }
+      .subbtn button{
+/* width:80px; */
+/* height: 80px; */
+font-size: xx-large;
+margin-right: 50px;
+      }
+      form p,label,input,textarea{
+        font-size: xx-large;
+      }
+      .flexboxx form .trustee .mb-3,.mb-4,.mb-5 input .form-control .bg-info{
+        font-size: xx-large;
+      }
+      #heading{
+        font-size: 70px;
+        margin-top: 20%;
+      }
+      #uplcss{
+        width: 60%;
+        
+      }
+      #options .btn.btn-primary{
+        height: 100px;
+        font-size: xxx-large;
+      }
+      .card #options{
+        width: 30%;
+      }
+      
+    }
+    @media screen and (min-width:1000px) and (max-width:1899px) {
+      .flexboxx .trustee h4,h5,input,button{
+            font-size: 30px;
+        }
+      form p,label{
+        font-size: larger;
+      }
+      #uplcss{
+        width: 60%;
+        
+      }
+      #options .btn.btn-primary{
+        height: 50px;
+        font-size: larger;
+      }
+      .card #options{
+        width: 30%;
+      }
+      
+    }
     @media screen and (max-width:767px) {
-       
+       #upinp{
+        flex-direction: column;
+        justify-content: space-between;
+       }
         .img1{
-        background-image: url(bnb.png);
+        background-image: url(cardano.png);
   background-size: cover;
   background-position: center;
   width: 40px;
   height: 40px;
   border: none;;
-  /* margin-right: 10px; */
+  margin-right: 5px;
     }
     .img2{
         background-image: url(Ethereum.png);
@@ -47,7 +123,7 @@
   background-position: center;
   width: 40px;
   height: 40px;
-  /* margin-right: 10px; */
+  margin-right: 5px;
     }
     .img3{
         background-image: url(polygon.png);
@@ -55,7 +131,7 @@
   background-position: center;
   width: 40px;
   height: 40px;
-  /* margin-right: 10px; */
+  margin-right: 5px;
     }
         .heading{
 font-size: medium;
@@ -67,16 +143,32 @@ font-size: medium;
     .card-title{
 font-size: medium;
         }
+        #buttonb1.btn.btn-dark{
+          
+          border-width: 3px;
+          border-radius: 30px;
+
+        }
     }
     @media screen and (min-width:768px) {
-        
+      .form-check{
+        margin-left: 100px;
+      }
+      #upinp{
+        flex-direction: row;
+        justify-content: space-between;
+       }
+        #buttonb1.btn.btn-dark{
+          font-size: xx-large;
+          border-width: 5px;
+        }
         .img1{
-        background-image: url(bnb.png);
+        background-image: url(cardano.png);
   background-size: cover;
   background-position: center;
   width: 60px;
   height: 60px;
-  /* margin-right: 10px; */
+  margin-right: 10px;
     }
     .img2{
         background-image: url(Ethereum.png);
@@ -84,7 +176,7 @@ font-size: medium;
   background-position: center;
   width: 60px;
   height: 60px;
-  /* margin-right: 10px; */
+  margin-right: 10px;
     }
     .img3{
         background-image: url(polygon.png);
@@ -92,7 +184,7 @@ font-size: medium;
   background-position: center;
   width: 60px;
   height: 60px;
-  /* margin-right: 10px; */
+  margin-right: 10px;
     }
     .card-title{
 font-size: 2.5em;
@@ -110,13 +202,35 @@ font-size: 2.5em;
     
     
     }
+    #startpage3{
+    
+    width: 100%;
+    height: 1080px;
+  
+    background: #3A6262; /* fallback color */
+    background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
+    
+    scroll-snap-align: start;
+    
+    
+    }
     #addbtn{
         display: flex;
     }
-    
+    #nami-message{
+      display: none;
+    }
+    .extra{
+      display: none;
+    }
  </style>
 </head>
+
 <body>
+  <div id="nami-message">
+    Please enable Nami wallet to view this page.
+  </div>
+  
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
@@ -151,13 +265,13 @@ font-size: 2.5em;
     <div class="container" style="color: white;background: none; ">
         <div class="row" >
           <div class="col-12">
-            <h1 class="heading" id="heading" style="display: flex;font-weight: 100; justify-content: center;align-items: center;margin-top: 10%;">Write here now, we will share it later</h1>
+            <h1 class="heading" id="heading" style="display: flex;font-weight: 100; justify-content: center;align-items: center;">Write here now, we will share it later</h1>
           </div>
         </div>
       </div>
       <div class="upbox" style="display: flex; justify-content: center;align-items: center;">
       
-      <div class="card text-center" style="margin-top:2%;background: linear-gradient(0.31deg, #26B8B8 -1358.45%, rgba(38, 184, 184, 0) 113.86%);
+      <div class="card text-center" id="options" style="margin-top:2%;background: linear-gradient(0.31deg, #26B8B8 -1358.45%, rgba(38, 184, 184, 0) 113.86%);
       border-radius: 35px; color: white;">
         
         <div class="card-body" id="oldmodal">
@@ -169,15 +283,62 @@ font-size: 2.5em;
               <div href="#" class="btn btn-primary" id="wpaid" style="margin-top: 10%;background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
               background-blend-mode: lighten;
               border-radius: 20px;">Start writing here</div>
+               <div href="#" class="btn btn-primary" id="writeupload" style="margin-top: 10%;background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+               background-blend-mode: lighten;
+               border-radius: 20px;">Upload / Write Document</div>
           <div href="#" class="btn btn-primary"   style="margin-top: 10%;background: none;
           border-radius: 20px;">View your DAO</div>
           <div href="#" class="btn btn-primary"   style="margin-top: 10%;background: none;
           border-radius: 20px;">Trustee & Successor</div>
       </div>
-          
+      
         
       </div>
       </div>
+      </div>
+      <div class="upbox"  id="fileupload" style=" justify-content: center;align-items: center; width: 100%;">
+      
+        <div class="card " id="uplcss" style="margin-top:2%;background: linear-gradient(0.31deg, #26B8B8 -1358.45%, rgba(38, 184, 184, 0) 113.86%);
+        border-radius: 35px; color: white;">
+          
+          <div class="card-body" id="oldmodal">
+            <h5 class="card-title" style="font-weight: 100; display: flex;justify-content: center;">SELECT BLOCKCHAIN</h5>
+            <div class="flex1" id="uploadform" style="justify-content: space-between;" >
+              <div href="#" class="btn btn-dark" id="buttonb1"  style="margin-top: 10%;background: none; margin-right: 8px;
+          border-radius: 20px;"><img class="">IPFS</div>
+           <div href="#" class="btn btn-dark" id="buttonb1"  style="margin-top: 10%;background: none;margin-right: 8px;
+           border-radius: 20px;"><img class="">FileCoin</div>
+            <div href="#" class="btn btn-dark" id="buttonb1"  style="margin-top: 10%;background: none;
+            border-radius: 20px;"><img class="">Arweave</div>
+
+          </div>
+          <form  style="margin-top: 10%; background: white; color: black;border-bottom-left-radius: 10px;
+          margin-bottom: 10%;
+          border-bottom-right-radius: 10px;">
+          <div class="container mt-3" id="upinp" style="display: flex; justify-content: space-between; ">
+            <p style="width:137px;margin-top: 10px;">Choose a file</p>
+            <input type="file" style="margin-top: 10px;border: 1px solid black; background: honeydew;">
+          </div>
+          <div class="form-check my-2" style="display: flex; justify-content: center; ">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label style="opacity: 0.5;" class="form-check-label" for="flexCheckChecked">
+              Add as a new version to existing files
+            </label>
+          </div>
+          <div class="container mb-5" id="upinp" style="display: flex;">
+            <p>Version Comments</p>
+            <textarea type="text" style="height: 80px;background: honeydew;"></textarea>
+          </div>
+          <div class="col-12 my-3 subbtn" style="display: flex; justify-content: right;" >
+            <button type="submit" style="border: 1px solid black; opacity: 0.5;" class="btn mb-4">OK</button>
+            <button type="reset" style="border: 1px solid black; opacity: 0.5;" class="btn mb-4">Cancel</button>
+          </div>
+          </form>
+           
+          
+        </div>
+        </div>
+        </div>
       <div class="upbox" style="display: flex; justify-content: center;align-items: center;">
         <!-- <div class="card text-center mb-3" style="width: 18rem;">
           <div class="card-body">
@@ -186,17 +347,17 @@ font-size: 2.5em;
             <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div> -->
-        <div class="card text-center selbchain" id="selbchain" style="margin-top:2%;background: linear-gradient(0.31deg, #26B8B8 -1358.45%, rgba(38, 184, 184, 0) 113.86%);
+        <div class="card text-left selbchain" id="selbchain" style="margin-top:2%;background: linear-gradient(0.31deg, #26B8B8 -1358.45%, rgba(38, 184, 184, 0) 113.86%);
         border-radius: 35px; color: white;">
           
           <div class="card-body" >
-            <h5 class="card-title" style="font-weight: 100;">SELECT BLOCKCHAIN</h5>
+            <h5 class="card-title" style="font-weight: 100; display: flex;justify-content: center;">SELECT BLOCKCHAIN</h5>
             <div class="flex1" >
-                <div href="#" class="btn btn-primary" id="button1"  style="margin-top: 10%;background: none;
-            border-radius: 20px;"><img class="img1">BNBchain</div>
-             <div href="#" class="btn btn-primary" id="button1"  style="margin-top: 10%;background: none;
+                <div href="#" class="btn btn-primary" id="buttonb1"  style="margin-top: 10%;background: none;
+            border-radius: 20px;"><img class="img1">Cardano</div>
+             <div href="#" class="btn btn-primary" id="buttonb1"  style="margin-top: 10%;background: none;
              border-radius: 20px;"><img class="img2">Ethereum</div>
-              <div href="#" class="btn btn-primary" id="button1"  style="margin-top: 10%;background: none;
+              <div href="#" class="btn btn-primary" id="buttonb1"  style="margin-top: 10%;background: none;
               border-radius: 20px;"><img class="img3">Polygon</div>
             </div>
          
@@ -224,37 +385,95 @@ font-size: 2.5em;
               ">2-4 Trustees
             </h5>
               <div class="mb-3">
-                <input type="email" class="form-control bg-info" id="recipient-name" name="email"  placeholder="TRUSTEES’WALLET">
+                <input type="email" class="form-control bg-info" id="recipient-name" name="email"  placeholder="TRUSTEES’WALLET (1)">
                
               </div>
               <div class="mb-3">
                 
-                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="TRUSTEES’EMAIL">
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="TRUSTEES’EMAIL (1)">
               </div>
               <div class="mb-3">
-                <input type="email" class="form-control bg-info" id="recipient-name" name="email"  placeholder="TRUSTEES’WALLET">
+                <input type="email" class="form-control bg-info" id="recipient-name" name="email"  placeholder="TRUSTEES’WALLET (2)">
                
               </div>
-              <div class="mb-3">
+              <div class="mb-3 ">
                 
-                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="TRUSTEES’EMAIL">
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="TRUSTEES’EMAIL (2)" >
               </div>
-             
+              <div class="mb-3 extra">
+                <input type="email" class="form-control bg-info" id="recipient-name" name="email"  placeholder="TRUSTEES’WALLET (3)">
+               
+              </div>
+              <div class="mb-3 extra">
+                
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="TRUSTEES’EMAIL (3)">
+              </div>
+              <div class="mb-3 extra">
+                <input type="email" class="form-control bg-info" id="recipient-name" name="email"  placeholder="TRUSTEES’WALLET (4)">
+               
+              </div>
+              <div class="mb-3 extra">
+                
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="TRUSTEES’EMAIL (4)">
+              </div>
+              <div class="makecenter mb-5" id="extratrustee"  style="display: flex; justify-content: center;">
+                <div href="#" class="btn btn-primary"  style="background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+                  background-blend-mode: lighten;
+                  border-radius: 20px;">ADD TRUSTEE</div>
+              </div>
+              <h4 style="font-weight: 400;">CHOOSE ERC20 TOKENS YOU WISH TO ENTRUST  </h4>
+              <div class="mb-4">
+                
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="Select tokens from the list">
+              </div>
+              <h4 style="font-weight: 400;">If your token is not on the list, add it by yourself
+              </h4>
+              <div class="mb-4">
+                
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="Enter the token manually">
+              </div>
+              <div class="makecenter mb-4" id="addtoken"  style="display: flex; justify-content: center;">
+                <div href="#" class="btn btn-primary"  style="background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+                  background-blend-mode: lighten;
+                  border-radius: 20px;">Add token</div>
+              </div>
+              <h4 class="mb-3" style="font-weight: 400;">ADD NFT ERC721 TOKENS YOU WISH TO ENTRUST
+        
+              </h4>
+              <div class="makecenter mb-4" id="addtoken"  style="display: flex; justify-content: center;">
+                <div href="#" class="btn btn-primary"  style="background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+                  background-blend-mode: lighten;
+                  border-radius: 20px;">Add NFT</div>
+              </div>
+              <h4 style="font-weight: 400;">ENTER YOUR EMAIL
+              </h4>
+              <div class="mb-5" id="extra">
+                        
+                <input type="text" class="form-control bg-info" id="message-text" name="name" placeholder="">
+              </div>
+              <div class="makecenter mb-5" id="nextstage"  style="display: flex; justify-content: center;">
+                <div href="#" class="btn btn-primary"  style="background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
+                  background-blend-mode: lighten;
+                  border-radius: 20px;">Next stage</div>
+              </div>
+            </div>
+           
+           
                 </form>
+                </div>
+                </div>
         </div>
         
-            <div href="#" class="btn btn-primary" id="button1"  style="margin-top: 10%;background: linear-gradient(199.76deg, #576DB9 26.21%, rgba(143, 141, 231, 0) 100.38%);
-            background-blend-mode: lighten;
-            border-radius: 20px;">ADD TRUSTEE</div>
           </div>
           
-        </div>
-        </div>
+        
+        
   
 
     <!-- <h3 style="color: white;"> Write here now, we will share it later</h3> -->
     </section>
     <section id="startpage2"></section>
+    <section id="startpage3"></section>
     <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1" style="background: #3A6262; /* fallback color */
     background: radial-gradient(ellipse at center, #3A6262 0%, rgba(17, 18, 18, 1) 100%);
     background-size: 100%;">
@@ -268,32 +487,81 @@ font-size: 2.5em;
         </div>
       </div>
     <script type="module">
+$("#startpage3").hide();
+
+      function showtrustee(){
+       const elm= document.getElementsByClassName('extra');
+       for(var i=0;i<elm.length;i++){
+        elm[i].style.display="flex";
+       }
+       
+        document.getElementById("extratrustee").style.display='none';
+
+      }
+      const addtrustee=document.getElementById('extratrustee');
+      addtrustee.onclick=showtrustee;
+      window.onload = function() {
+  if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined'){
+    // document.body.style.display = 'none';.
+    window.location.href = 'https://chrome.google.com/webstore/detail/nami/lpfcbjknijpeeillifnkikgncikgfhdo';
+    document.getElementById("nami-message").style.display = 'block';
+    alert("Please Add The Cardano Wallet");
+   
+  }
+  else {
+    document.body.style.display = 'block';
+
+    
+  }
+};
+
+
+     
         import {Address} from './@emurgo/cardano-serialization-lib-asmjs/cardano_serialization_lib.js';
     
         const addbtn=document.getElementById('addbtn');
       async  function viewaddress(){
-            if(typeof window.cardano == 'undefined' || typeof window.cardano.nami=='undefined')
+        if (typeof window.cardano == 'undefined' || typeof window.cardano.nami == 'undefined') {
+  // If Nami wallet is not enabled, hide the page and show the message.
+  document.getElementById('nami-message').style.display = 'block';
+    // Return or show an alert message
     return;
+}
     // console.log("invoked");
-        window. cardano.nami.enable()
-    .then(
-        api=>{
-    
-    api.getUsedAddresses()
-    .then (addy=>{
-        const bech32Address= Address.from_hex(addy[0]).to_bech32();
-        const address=document.getElementById("address");
-        address.innerHTML= bech32Address;
-        $('#exampleModalToggle3').modal('show');
-            setTimeout(function() {
-              $('#exampleModalToggle3').modal('hide');
-            }, 3000);
+    window.cardano.nami.enable().then(api => {
+      document.body.style.display = 'block';
+  api.getUsedAddresses().then(addy => {
+    const bech32Address = Address.from_hex(addy[0]).to_bech32();
+    const address = document.getElementById("address");
+    address.innerHTML = bech32Address;
+    $('#exampleModalToggle3').modal('show');
+    setTimeout(function() {
+      $('#exampleModalToggle3').modal('hide');
+    }, 3000);
+
+    // When Nami wallet is enabled, show the page and hide the message.
+    document.body.style.display = 'block';
+  
+  });
+});
 
     }
-    );
-    })
+    function Upload(){
+      const flexbox=document.getElementById('flexbox');
+        const oldmodal=document.getElementById('oldmodal');
+
+        flexbox.style.display='none';
+        oldmodal.style.display='none';
+        const fileupload=document.getElementById('fileupload');
+        fileupload.style.display="flex";
+
     }
+    const writeupload =document.getElementById('writeupload');
+    writeupload.onclick=Upload;
+ 
     function selectfree(){
+      $("#startpage3").show();
+
         const flexbox=document.getElementById('flexbox');
         const oldmodal=document.getElementById('oldmodal');
 
@@ -304,6 +572,8 @@ font-size: 2.5em;
     }
     const selecbchain=document.getElementById('wfree');
     selecbchain.onclick=selectfree;
+    const selecbchain1=document.getElementById('wpaid');
+    selecbchain1.onclick=selectfree;
     addbtn.onclick=viewaddress;
         const button=document.getElementById("button");
         const button1=document.getElementById("button1");
@@ -324,11 +594,16 @@ font-size: 2.5em;
         // button.style.width='50%';
         
         const button1=document.getElementById("button1");
-        button1.style.display='none';
-        const conntit=document.getElementById('conntit');
-        conntit.style.display='none';
+        
+        // const conntit=document.getElementById('conntit');
+        
+        if (button1){
+          
         const flexbox=document.getElementById('flexbox');
         flexbox.style.display='flex';
+          button1.style.display='none';
+          conntit.style.display='none';
+        }
         
 
         
@@ -339,6 +614,7 @@ font-size: 2.5em;
         if(content.innerHTML==="Connect wallet"){
             const addbutton = document.getElementById("addbtn");
             addbutton.style.display='flex';
+            return;
             
         }
         content.innerHTML="Wallet Connected";
@@ -353,9 +629,13 @@ font-size: 2.5em;
     });
         }
     );
+
+   
+
+    
     }
     button.onclick=connectWallet;
-    button1.onclick=connectWallet;
+    // button1.onclick=connectWallet;
      
     // fetch('https://cardano-preprod.blockfrost.io/api/v0/', {
     //   headers: {

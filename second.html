@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="App.css">
 	<title>Page Title</title>
 	<style>
-        body{
+        /* body{
             color: #000;
         }
 	.expand_component {
@@ -324,12 +324,41 @@
 .footer .footer_wrapper .terms p:not(:last-child) {
     -webkit-padding-end: 44px;
     padding-inline-end:44px}
+    #custom-file-input {
+  display: none;
+} */
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: yellow;
+}
 
 
 	</style>
 </head>
+
 <body>
-	
-	<div class="footer"><div class="footer_wrapper"><div class="site_map"><div class="category"><h3>Technology</h3><div class="category_routes route_paths route_links"><ul class="paths"><li class="nav_route">The Trustchain Protocol</li><li class="nav_route">The COTI MultiDAG</li><li class="nav_route">Watch Simulation</li></ul><ul class="links"><li class="nav_route">Github</li><li class="nav_route">MultiDAG Lightpaper</li><li class="nav_route">Trustchain Whitepaper</li></ul></div></div><div class="category"><h3>Learn</h3><div class="category_routes route_paths "><ul class="paths"><li class="nav_route">Videos</li><li class="nav_route">Blog</li><li class="nav_route">Help Center</li></ul></div></div><div class="category"><h3>Ecosystem</h3><div class="category_routes route_paths "><ul class="paths"><li class="nav_route">The COTI Treasury</li><li class="nav_route">COTI Pay VIPER Wallet</li><li class="nav_route">Debit Cards And Bank Accounts</li><li class="nav_route">COTI Pay Business</li><li class="nav_route">Djed</li><li class="nav_route">ADA Pay</li><li class="nav_route">Crypto Volatility Index (CVI)</li></ul></div></div><div class="category"><h3>Network</h3><div class="category_routes route_paths route_links"><ul class="paths"><li class="nav_route">The COTI Coin</li></ul><ul class="links"><li class="nav_route">Explorer</li><li class="nav_route">Bridge</li></ul></div></div><div class="category"><h3>About</h3><div class="category_routes route_paths "><ul class="paths"><li class="nav_route">Team</li><li class="nav_route">Community</li><li class="nav_route">Careers</li></ul></div></div><div class="social_networks"><h3>Social</h3><div class="social_link"><div class="image_component   "><img src="/static/media/twitter.c5b1d3be29aa62f1ea75.svg" alt=""></div>Twitter</div><div class="social_link"><div class="image_component   "><img src="/static/media/discord.b938f74ea2f0d77698a6.svg" alt=""></div>Discord</div><div class="social_link"><div class="image_component   "><img src="/static/media/telegram.5ad6de778c56db3e5756.svg" alt=""></div>Telegram</div><div class="social_link"><div class="image_component   "><img src="/static/media/github.ecebadbc23c1511df59a.svg" alt=""></div>Github</div><div class="social_link"><div class="image_component   "><img src="/static/media/youtube.b30e90fbcadebb20a1d1.svg" alt=""></div>Youtube</div></div></div><div class="site_info"><div class="logo_component small"><div class="logo" title="COTI"></div></div><div class="legal_contact"><div class="terms"><p>Privacy Policy</p><p>Terms of Service</p><p>AML</p></div><a class="contact" href="mailto: contact@coti.io"><span class="email_forward_icon"></span>contact@coti.io</a></div></div></div></div>
+    <script>document.getElementById("custom-file-input").addEventListener("change", function() {
+        var fullPath = this.value;
+        var fileName = fullPath.split("\\").pop();
+        document.getElementById("custom-file-label").innerHTML = fileName;
+      });
+      
+      // Create custom button
+      var customButton = document.createElement("button");
+      customButton.classList.add("custom-file-upload");
+      customButton.innerHTML = "Choose file";
+      
+      // Append custom button to label
+      document.querySelector(".input-group-text").appendChild(customButton);
+      </script>
+	<div class="input-group mb-3">
+        <label class="input-group-text" for="custom-file-input">Choose a file</label>
+        <input type="file" class="form-control" id="custom-file-input">
+      </div>
+      
+	<!-- <div class="footer"><div class="footer_wrapper"><div class="site_map"><div class="category"><h3>Technology</h3><div class="category_routes route_paths route_links"><ul class="paths"><li class="nav_route">The Trustchain Protocol</li><li class="nav_route">The COTI MultiDAG</li><li class="nav_route">Watch Simulation</li></ul><ul class="links"><li class="nav_route">Github</li><li class="nav_route">MultiDAG Lightpaper</li><li class="nav_route">Trustchain Whitepaper</li></ul></div></div><div class="category"><h3>Learn</h3><div class="category_routes route_paths "><ul class="paths"><li class="nav_route">Videos</li><li class="nav_route">Blog</li><li class="nav_route">Help Center</li></ul></div></div><div class="category"><h3>Ecosystem</h3><div class="category_routes route_paths "><ul class="paths"><li class="nav_route">The COTI Treasury</li><li class="nav_route">COTI Pay VIPER Wallet</li><li class="nav_route">Debit Cards And Bank Accounts</li><li class="nav_route">COTI Pay Business</li><li class="nav_route">Djed</li><li class="nav_route">ADA Pay</li><li class="nav_route">Crypto Volatility Index (CVI)</li></ul></div></div><div class="category"><h3>Network</h3><div class="category_routes route_paths route_links"><ul class="paths"><li class="nav_route">The COTI Coin</li></ul><ul class="links"><li class="nav_route">Explorer</li><li class="nav_route">Bridge</li></ul></div></div><div class="category"><h3>About</h3><div class="category_routes route_paths "><ul class="paths"><li class="nav_route">Team</li><li class="nav_route">Community</li><li class="nav_route">Careers</li></ul></div></div><div class="social_networks"><h3>Social</h3><div class="social_link"><div class="image_component   "><img src="/static/media/twitter.c5b1d3be29aa62f1ea75.svg" alt=""></div>Twitter</div><div class="social_link"><div class="image_component   "><img src="/static/media/discord.b938f74ea2f0d77698a6.svg" alt=""></div>Discord</div><div class="social_link"><div class="image_component   "><img src="/static/media/telegram.5ad6de778c56db3e5756.svg" alt=""></div>Telegram</div><div class="social_link"><div class="image_component   "><img src="/static/media/github.ecebadbc23c1511df59a.svg" alt=""></div>Github</div><div class="social_link"><div class="image_component   "><img src="/static/media/youtube.b30e90fbcadebb20a1d1.svg" alt=""></div>Youtube</div></div></div><div class="site_info"><div class="logo_component small"><div class="logo" title="COTI"></div></div><div class="legal_contact"><div class="terms"><p>Privacy Policy</p><p>Terms of Service</p><p>AML</p></div><a class="contact" href="mailto: contact@coti.io"><span class="email_forward_icon"></span>contact@coti.io</a></div></div></div></div> -->
 </body>
 </html>
